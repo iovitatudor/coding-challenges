@@ -21,3 +21,9 @@ class Solution {
         return $result;
     }
 }
+
+
+$solution = new Solution();
+$output = $solution->longestCommonPrefix(["flower", "flow", "flight"]);
+
+var_dump($output);
