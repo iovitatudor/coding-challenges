@@ -1,0 +1,20 @@
+Task Overview
+Find all unique customers who signed up and started a transaction during the months of April or May.
+
+Data Requirements
+* **Filter by Time**: Include transactions with start dates in April (Month 4) or May (Month 5).
+* **Remove Duplicates**: A customer can have many transactions. The final list must show each ID only once.
+* **Columns Needed**: Output only the `signup_id` column.
+
+Table Schema
+* **Table Name**: `transactions`
+* **Key Columns**:
+  * `signup_id` (Big Int) — Unique ID for the user signup.
+  * `transaction_start_date` (Date) — The day the transaction began.
+
+Final SQL Code
+```sql
+SELECT DISTINCT signup_id
+FROM transactions
+WHERE EXTRACT(MONTH FROM transaction_start_date) IN (4, 5);
+```
