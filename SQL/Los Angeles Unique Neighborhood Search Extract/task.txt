@@ -1,0 +1,13 @@
+Task Overview
+Find all unique neighborhoods in Los Angeles where users have searched for Airbnb listings.
+
+Data Requirements
+* **Filter by Location**: Only include rows where the city is 'Los Angeles'.
+* **Remove Duplicates**: Many searches happen in the same area. The final list must show each neighborhood name only once.
+* **Columns Needed**: Output only the `neighbourhood` column.
+
+Table Schema
+* **Table Name**: `airbnb_search_details`
+* **Key Columns**:
+  * `city` (Text) — The name of the city where the search occurred.
+  * `neighbourhood` (Text) — The specific neighborhood area.
