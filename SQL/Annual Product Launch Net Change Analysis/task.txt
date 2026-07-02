@@ -1,0 +1,18 @@
+TASK OVERVIEW:
+Calculate the net change in the number of products launched by each company in the year 2020 compared to the year 2019. The final output must display each company name alongside its calculated net difference.
+
+MATHEMATICAL FORMULA:
+Net Difference = (Total Launches in 2020) - (Total Launches in 2019)
+
+DATA REQUIREMENTS:
+* Remove Duplicates: Count unique product names per year to ensure data accuracy.
+* Handle Missing Values: If a company had zero launches in a given year, default the value to 0 to prevent broken null math calculations.
+* Aggregation: Group the final calculations uniformly by company name.
+* Columns Needed: company_name, net_difference
+
+TABLE SCHEMA:
+* Table Name: car_launches
+* Core Columns:
+  - company_name (Text): The name of the manufacturing company.
+  - product_name (Text): The name of the specific product model launched.
+  - year (Big Int): The calendar year the product was officially launched.
