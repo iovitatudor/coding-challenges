@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Carrier Order Volume Audit - Speedy Express Total
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total number of orders that have been processed and shipped by the logistics carrier named 'Speedy Express'. The final output must display a single aggregate count of these orders.
+
+DATA REQUIREMENTS:
+* Relationship Mapping: Join the order transaction records to the carrier metadata table using the unique carrier identification key.
+* Data Filtering: Restrict the dataset to only evaluate records matching the string literal 'Speedy Express'.
+* Aggregation: Apply a total row count calculation to summarize the matched shipment volume.
+* Columns Needed: total_shipped_orders
+
+TABLE SCHEMA:
+
+1. shopify_orders (so)
+   - id (Big Int): Unique identifier for the individual order.
+   - carrier_id (Big Int): Foreign key linking the order to the shipping company.
+
+2. shopify_carriers (sc)
+   - id (Big Int): Unique identifier for the carrier (corresponds to carrier_id).
+   - name (Text): The legal or commercial name of the shipping entity.
