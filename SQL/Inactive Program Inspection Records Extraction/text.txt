@@ -1,0 +1,17 @@
+TASK OVERVIEW:
+Identify and extract all health and safety inspection records that are associated with a business or facility program that is currently flagged as inactive.
+
+DATA REQUIREMENTS:
+* Filter Criterion: Filter the rows where the program's lifecycle status is officially recorded as 'INACTIVE'.
+* Row Selection: Return all relevant columns from the data row to ensure full details (such as facility name, score, grade, and inspection date) are preserved for auditing.
+* Columns Needed: Output all columns (*).
+
+TABLE SCHEMA:
+* Table Name: inspections
+* Core Columns:
+  - serial_number (Text): Unique identifier for the inspection event.
+  - facility_name (Text): Name of the business establishment.
+  - activity_date (Date): The date the inspection took place.
+  - score (Big Int): Numeric score awarded during the inspection.
+  - grade (Text): Letter grade assigned based on the score (e.g., 'A', 'B').
+  - program_status (Text): Current administrative status of the program ('ACTIVE' or 'INACTIVE').
