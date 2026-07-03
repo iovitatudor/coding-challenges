@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: December 2021 Pending Claims Volume Audit
+========================================================================
+
+TASK OVERVIEW:
+Count the total number of insurance or medical claims submitted during the month of December 2021 that are currently still pending resolution. A claim is considered pending if it does not have an official acceptance date or rejection date.
+
+DATA REQUIREMENTS:
+* Time Filter: Limit records to submission dates between '2021-12-01' and '2021-12-31' inclusive.
+* Status Filter: Isolate pending claims by ensuring both the acceptance date and rejection date fields are completely blank (NULL).
+* Aggregation: Calculate a single total count of all matching records.
+* Columns Needed: pending_claims_count
+
+TABLE SCHEMA:
+* Table Name: cvs_claims
+* Core Columns:
+  - claim_id (Big Int) — Unique identifier for each claim record.
+  - date_submitted (Date) — The date the claim was initially filed.
+  - date_accepted (Date) — The date the claim was approved (NULL if not approved).
+  - date_rejected (Date) — The date the claim was denied (NULL if not denied).
