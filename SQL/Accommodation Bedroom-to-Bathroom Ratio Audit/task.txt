@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Accommodation Bedroom-to-Bathroom Ratio Audit
+========================================================================
+
+TASK OVERVIEW:
+Identify all accommodation searches where the property features an identical count of bedrooms and bathrooms.
+
+DATA REQUIREMENTS:
+* Column Comparison: Filter rows where the numeric value in the 'bedrooms' column matches the value in the 'bathrooms' column.
+* Columns Needed: id, accommodates, bathrooms, bedrooms
+
+TABLE SCHEMA:
+* Table Name: airbnb_search_details
+* Core Columns:
+  - id (Big Int) — Unique search record identifier.
+  - accommodates (Big Int) — Total number of guests the listing fits.
+  - bathrooms (Big Int) — Number of bathrooms in the listing.
+  - bedrooms (Big Int) — Number of bedrooms in the listing.
