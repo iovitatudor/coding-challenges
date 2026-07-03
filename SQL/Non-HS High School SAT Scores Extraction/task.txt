@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Non-HS High School SAT Scores Extraction
+========================================================================
+
+TASK OVERVIEW:
+Extract the full SAT score records for students who attend high schools whose names do not end with the suffix 'HS'.
+
+DATA REQUIREMENTS:
+* Text Pattern Matching: Filter out any school names that end with 'HS' using string pattern matching wildcards.
+* Data Selection: Return all columns for the matching student records to display the various SAT score breakdowns (Math, Verbal, Writing).
+* Columns Needed: All columns (*)
+
+TABLE SCHEMA:
+* Table Name: sat_scores
+* Core Columns:
+  - id (Big Int) — Unique record identifier.
+  - school (Text) — The name of the high school.
+  - sat_math (Double Precision) — The student's SAT math score.
+  - sat_verbal (Double Precision) — The student's SAT verbal score.
+  - sat_writing (Double Precision) — The student's SAT writing score.
