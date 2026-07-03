@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: Unique Employee Logins Audit (December 2021)
+========================================================================
+
+TASK OVERVIEW:
+Find and extract the unique worker IDs of individuals who logged into the system between December 13th and December 19th, 2021, inclusive.
+
+DATA REQUIREMENTS:
+* Filter by Time: Include only login transactions that occurred from '2021-12-13 00:00:00' through '2021-12-19 23:59:59'.
+* Remove Duplicates: An employee may log in multiple times. The final list must show each worker ID only once.
+* Columns Needed: worker_id
+
+TABLE SCHEMA:
+* Table Name: worker_logins
+* Core Columns:
+  - worker_id (Big Int) — Unique identification number for the employee.
+  - login_timestamp (Timestamp) — The exact date and time the login event occurred.
