@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: 2021 Annual Sales Revenue Calculation (PostgreSQL)
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total cumulative sales revenue generated during the entire 2021 calendar year. The final output must be a single aggregate total.
+
+DATA REQUIREMENTS:
+* Time Extraction Filter: Extract the calendar year from the order date tracking field using PostgreSQL compatible extraction syntax.
+* Mathematical Aggregation: Sum up the individual values within the order total column to calculate total revenue.
+* Columns Needed: A single column containing the sum of order_total.
+
+TABLE SCHEMA:
+* Table Name: amazon_sales
+* Core Columns:
+  - order_date (Date) — The calendar date the purchase was finalized.
+  - order_total (Big Int) — The transaction financial amount.
