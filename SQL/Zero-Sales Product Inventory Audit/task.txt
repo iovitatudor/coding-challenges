@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Zero-Sales Product Inventory Audit
+========================================================================
+
+TASK OVERVIEW:
+Identify and extract a comprehensive list of all product SKUs that have recorded zero transaction volume or sales history. Output the unique SKU ID and associated market name for these specific products.
+
+DATA REQUIREMENTS:
+* Table Relationship: Perform a LEFT JOIN from the product dimension table to the customer sales transaction table. This guarantees unsold products remain visible in the query pool.
+* Isolation Filter: Isolate records where the foreign key connection in the transaction ledger is completely missing (IS NULL).
+* Columns Needed: prod_sku_id, market_name
+
+TABLE SCHEMA:
+
+1. dim_product (dp)
+   - prod_sku_id (Text) — Unique SKU identifier for the product.
+   - market_name (Text) — The geographic or regional market name.
+
+2. fct_customer_sales (fcs)
+   - prod_sku_id (Text) — Foreign key tracking sold product units.
