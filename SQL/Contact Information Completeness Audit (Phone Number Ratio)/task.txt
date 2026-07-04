@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Contact Information Completeness Audit (Phone Number Ratio)
+========================================================================
+
+TASK OVERVIEW:
+Calculate and return the exact ratio of employees who are missing a phone number (where phone_number IS NULL). The output must be a decimal value between 0 and 1.
+
+DATA REQUIREMENTS:
+* Conditional Flagging: Identify rows where the phone number column is NULL and assign a numeric flag.
+* Decimal Division: Ensure the calculations use floating-point numbers to prevent integer truncation bugs in PostgreSQL.
+* Aggregation: Divide the sum of missing records by the total employee count.
+* Columns Needed: employees_ratio
+
+TABLE SCHEMA:
+* Table Name: techcorp_workforce
+* Core Columns:
+  - id (Big Int) — Unique employee identification identifier.
+  - phone_number (Text) — The employee's phone number recording string.
