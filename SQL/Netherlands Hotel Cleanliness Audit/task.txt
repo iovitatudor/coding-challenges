@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Netherlands Hotel Cleanliness Audit
+========================================================================
+
+TASK OVERVIEW:
+Identify all hotel reviews in the Netherlands where guests left a negative complaint containing the keyword 'dirty'. The final output must preserve and display all available table columns.
+
+DATA REQUIREMENTS:
+* Regional Filter: Isolate hotels located in the Netherlands by checking the address tracking field.
+* Text Content Mining: Filter the negative review text to flag references to the word 'dirty'.
+* Case-Insensitivity: Implement case-blind matching to capture variations in capitalization (e.g., 'Dirty', 'dirty').
+* Columns Needed: All columns (*)
+
+TABLE SCHEMA:
+* Table Name: hotel_reviews
+* Core Columns:
+  - hotel_name (Text) — The commercial name of the hotel establishment.
+  - hotel_address (Text) — The complete physical street and country address.
+  - negative_review (Text) — The verbatim negative feedback logged by the guest.
