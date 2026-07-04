@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: High Earners Support Benchmarking Analysis
+========================================================================
+
+TASK OVERVIEW:
+Identify all high-earning staff members within the HR and Admin departments who earn a salary strictly greater than $80,000. Output their first name, last name, department, and salary.
+
+DATA REQUIREMENTS:
+* Department Filter: Restrict rows to records where the department is either 'HR' or 'Admin'.
+* Compensation Filter: Restrict rows to records where the salary is strictly greater than 80000.
+* Operator Precedence: Ensure logical grouping is implemented so the salary constraint applies uniformly to both target departments.
+* Columns Needed: first_name, last_name, department, salary
+
+TABLE SCHEMA:
+* Table Name: techcorp_workforce
+* Core Columns:
+  - first_name (Text) — The employee's first name.
+  - last_name (Text) — The employee's last name.
+  - department (Text) — The organizational department name.
+  - salary (Big Int) — The employee's annual benchmarking salary.
