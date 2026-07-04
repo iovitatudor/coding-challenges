@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: Hires Count Auditing (Jan - Jul 2022 Inclusive)
+========================================================================
+
+TASK OVERVIEW:
+Find the total number of employees hired between the months of January and July in the year 2022 inclusive. The output must be a single aggregate count.
+
+DATA REQUIREMENTS:
+* Time Filter: Restrict records to joining dates from '2022-01-01' through '2022-07-31'.
+* Aggregation: Calculate a single total count of all matching employee rows.
+* Columns Needed: employees_number
+
+TABLE SCHEMA:
+* Table Name: employees
+* Core Columns:
+  - id (Big Int) — Unique identification number for the employee.
+  - joining_date (Date) — The official date the employee was hired.
