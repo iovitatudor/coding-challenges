@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Monthly Account Registrations Trend
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total number of account registrations aggregated on a monthly baseline. The final output must convert transaction signup dates into a standardized string format (YYYY-MM) alongside their corresponding registration volumes.
+
+DATA REQUIREMENTS:
+* Date Type Conversion: Format standard calendar registration dates into a truncated Year-Month string (YYYY-MM) utilizing database-compliant character conversions.
+* Grouping Strategy: Consolidate data buckets concurrently matching the extracted monthly timeline dimensions.
+* Aggregation: Count total record occurrences per monthly grouping.
+* Columns Needed: year_month, registration_count
+
+TABLE SCHEMA:
+* Table Name: noom_signups
+* Core Columns:
+  - signup_id (Text) — Unique string identifier tracking individual user account creations.
+  - started_at (Date) — The official timestamp date the subscription process began.
+
+========================================================================
