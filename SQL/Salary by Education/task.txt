@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Salary by Education
+========================================================================
+
+TASK OVERVIEW:
+Given a dataset containing the professional profiles and compensation metrics of a group of individuals, calculate the average annual salary associated with each distinct level of formal education.
+
+DATA REQUIREMENTS:
+* Mathematical Aggregation: Use the mean/average calculation function to compute individual salary groups.
+* Grouping: Segment the final aggregate calculation metrics uniformly by the formal education level dimension.
+* Columns Needed: education, avg_salary
+
+TABLE SCHEMA:
+* Table Name: google_salaries
+* Core Columns:
+  - education (Text) — The highest level of academic completion achieved by the employee.
+  - salary (Big Int) — The baseline annual compensation package amount.
+
+========================================================================
