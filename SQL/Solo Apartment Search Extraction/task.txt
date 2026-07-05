@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Solo Apartment Search Extraction
+========================================================================
+
+TASK OVERVIEW:
+Extract all listing search records for properties classified specifically as an 'Apartment' that are configured to accommodate exactly one guest.
+
+DATA REQUIREMENTS:
+* Property Type Filter: Filter rows where the property type classification is exactly 'Apartment'.
+* Capacity Filter: Isolate searches where the accommodation capacity ('accommodates') equals 1.
+* Row Selection: Return all columns (*) to ensure comprehensive details regarding the listing search are captured.
+* Columns Needed: All columns (*)
+
+TABLE SCHEMA:
+* Table Name: airbnb_search_details
+* Core Columns:
+  - property_type (Text) — The structural category of the listing (e.g., 'Apartment', 'House').
+  - accommodates (Big Int) — The total number of guests the listing is intended to fit.
+
+========================================================================
