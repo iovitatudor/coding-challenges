@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Active Users Per Platform
+========================================================================
+
+TASK OVERVIEW:
+For each dynamic hardware or operating system platform, calculate the total volume of unique users who initiated an active session. Output the name of every platform alongside its corresponding distinct user count.
+
+DATA REQUIREMENTS:
+* Remove Duplicates: Implement nested distinction within the aggregation function to count unique user IDs per platform profile, ignoring multi-session repetitions.
+* Grouping: Condense the transactional user session metrics uniformly by the platform dimension.
+* Columns Needed: platform, number_of_users
+
+TABLE SCHEMA:
+* Table Name: user_sessions
+* Core Columns:
+  - platform (Text) — The application ecosystem used (e.g., 'Windows', 'iPhone').
+  - user_id (Text) — Unique string identifier mapping back to the client account profile.
+
+========================================================================
