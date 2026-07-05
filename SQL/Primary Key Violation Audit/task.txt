@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Primary Key Violation Audit
+========================================================================
+
+TASK OVERVIEW:
+Identify and return all customer records that are violating primary key uniqueness constraints within the Customer Dimension table. Target IDs that exist more than once, outputting the specific customer ID and the exact number of times it repeats.
+
+DATA REQUIREMENTS:
+* Duplication Tracking: Group the datasets by customer identifier to evaluate identity frequencies.
+* Post-Aggregation Filtering: Apply a HAVING clause constraint to drop valid rows (count equal to 1) and isolate instances where records repeat.
+* Columns Needed: cust_id, presence
+
+TABLE SCHEMA:
+* Table Name: dim_customer
+* Core Columns:
+  - cust_id (Text) — The tracking identifier intended to act as a unique primary key.
+
+========================================================================
