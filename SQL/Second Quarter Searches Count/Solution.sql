@@ -1,0 +1,3 @@
+SELECT COUNT(*)
+FROM fb_searches
+WHERE date BETWEEN '2021-04-01' AND '2021-06-30';

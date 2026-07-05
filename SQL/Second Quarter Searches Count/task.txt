@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Second Quarter Searches Count
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total number of searches that occurred during the second quarter (Q2) of the year 2021. The output must return a single aggregate total.
+
+DATA REQUIREMENTS:
+* Time Window: Restrict records strictly to dates falling inside Q2 of 2021 (from April 1st, 2021 through June 30th, 2021 inclusive).
+* Column Handling: Reference the date column directly as an identifier instead of an isolated string literal to prevent query evaluation errors.
+* Aggregation: Apply a total row count calculation to summarize search volume.
+* Columns Needed: A single unaliased or implicitly named count column.
+
+TABLE SCHEMA:
+* Table Name: fb_searches
+* Core Columns:
+  - date (Date) — The calendar date the search event occurred.
+  - search_id (Big Int) — Unique identifier tracking the specific query transaction.
+
+========================================================================
