@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: User Loan Submission Types Cross Audit
+========================================================================
+
+TASK OVERVIEW:
+Identify and extract the unique user IDs of all clients who have initiated at least one 'Refinance' submission AND at least one 'InSchool' submission.
+
+DATA REQUIREMENTS:
+* Type Filtering: Limit initial records to rows matching either the 'Refinance' or 'InSchool' literal strings.
+* Logical Intersect Aggregation: Group records by user and apply a post-aggregation distinct count filter to confirm that both targeted loan types exist in the user's transaction profile.
+* Columns Needed: user_id
+
+TABLE SCHEMA:
+* Table Name: loans
+* Core Columns:
+  - user_id (Big Int) — Unique account identifier mapping back to the customer profile.
+  - type (Text) — The categorization category of the loan record (e.g., 'Refinance', 'InSchool').
+
+========================================================================
