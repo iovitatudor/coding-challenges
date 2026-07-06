@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Facebook Post Average Likes Analysis
+========================================================================
+
+TASK OVERVIEW:
+Given a tracking log containing historical Facebook post data, calculate the overall average number of likes received across all posts in the dataset. The output must return a single summary number.
+
+DATA REQUIREMENTS:
+* Mathematical Aggregation: Compute the arithmetic mean of the engagement column across the entire dataset.
+* Columns Needed: avg_number_of_likes
+
+TABLE SCHEMA:
+* Table Name: fb_posts
+* Core Columns:
+  - post_id (Text) — Unique identifier for the individual post.
+  - no_of_likes (Big Int) — The total number of likes received by the post.
+
+========================================================================
