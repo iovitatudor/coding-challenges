@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Third Heaviest Shipment Extraction
+========================================================================
+
+TASK OVERVIEW:
+Identify the shipment ID and total weight of the third heaviest shipment in the dataset. If a shipment contains multiple item rows, sum the weights on a per-shipment basis first. In the case of identical weights, handle ties gracefully without skipping numerical ranks.
+
+DATA REQUIREMENTS:
+* Internal Aggregation: Sum individual item weights uniformly by shipment identifier.
+* Dense Ranking: Apply a ranking system (DENSE_RANK) ordered by weight descending. This ensures duplicate peak weights hold the same rank position without skipping down the sequence.
+* Positional Filtering: Isolate and display only records sitting exactly at rank position 3.
+* Columns Needed: shipment_id, total_weight
+
+TABLE SCHEMA:
+* Table Name: amazon_shipment
+* Core Columns:
+  - shipment_id (Big Int) — Unique transactional identifier for the shipment container.
+  - weight (Big Int) — The weight metric value for an item row within the shipment.
+
+========================================================================
