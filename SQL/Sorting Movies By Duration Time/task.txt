@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Sorting Movies By Duration Time
+========================================================================
+
+TASK OVERVIEW:
+Sort all records within the movie catalogue according to the running length or duration of the movie in descending order. The final dataset must output all columns.
+
+DATA REQUIREMENTS:
+* Text-to-Integer Extraction: Because the duration is logged as text data type (e.g., '90 min'), regular expressions must strip away non-numeric characters and cast the result into an integer to ensure true numerical ordering.
+* Sorting Hierarchy: Order the evaluated numerical values dynamically from highest to lowest (DESC).
+* Columns Needed: All columns (*)
+
+TABLE SCHEMA:
+* Table Name: movie_catalogue
+* Core Columns:
+  - duration (Text) — Text entry containing the runtime of the movie asset.
+  - title (Text) — The name of the movie asset.
+
+========================================================================
