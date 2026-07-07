@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Users Missing Phone Numbers
+========================================================================
+
+TASK OVERVIEW:
+Identify and extract a list of users who have not provided their phone numbers in the system. This list will be used by the product team to prompt users to update their contact information for an upcoming WhatsApp notification feature.
+
+DATA REQUIREMENTS:
+* Missing Data Filtering: Filter records where the 'phone_number' field is completely empty or missing (IS NULL).
+* Columns Needed: user_id, name
+
+TABLE SCHEMA:
+* Table Name: fintech_app_users
+* Core Columns:
+  - user_id (Big Int) — Unique numerical identifier for the application user.
+  - user_name (Text) — The profile name of the application user.
+  - phone_number (Text) — The phone number string provided by the user (if any).
+
+========================================================================
