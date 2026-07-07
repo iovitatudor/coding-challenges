@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: Unique Users Per Client Per Month
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total volume of unique users interacting with each client platform, aggregated on a monthly baseline. Assume all transactional logs occur within the same year, meaning the time dimension should be outputted purely as a numeric value from 1 to 12.
+
+DATA REQUIREMENTS:
+* Time Extraction: Extract the numerical month value (1 through 12) from the timestamp transaction field using PostgreSQL date parsing functions.
+* Duplicate Handling: Implement a distinct counting strategy within the aggregation component to capture individual users exactly once per monthly client slice.
+* Aggregation Grouping: Consolidate records uniformly by both the extracted month and the client profile identifier.
+* Columns Needed: month, client_id, users_qty
+
+TABLE SCHEMA:
+* Table Name: fact_events
+* Core Columns:
+  - time_id (Date) — The timestamp or date the event was registered.
+  - client_id (Text) — Unique identifier for the corporate client platform.
+  - user_id (Text) — Unique string identifier tracking individual client users.
+
+========================================================================
