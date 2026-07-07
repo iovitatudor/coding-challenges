@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Session Type Duration Analysis
+========================================================================
+
+TASK OVERVIEW:
+Calculate the average session duration (measured explicitly in seconds) for each distinct type of session in the dataset.
+
+DATA REQUIREMENTS:
+* Timestamp Math: Calculate the running interval between 'session_start' and 'session_end' timestamps.
+* Metric Conversion: Extract the raw epoch numeric value from the interval to capture the total duration in seconds.
+* Aggregation: Compute the arithmetic mean (AVG) of the calculated durations.
+* Grouping Strategy: Consolidate the statistical summary rows uniformly by the session type column.
+* Columns Needed: session_type, avg_duration_seconds
+
+TABLE SCHEMA:
+* Table Name: twitch_sessions
+* Core Columns:
+  - session_type (Text) — The categorization category of the interactive session.
+  - session_start (Timestamp) — The precise start date and time of the session.
+  - session_end (Timestamp) — The precise conclusion date and time of the session.
+
+========================================================================
