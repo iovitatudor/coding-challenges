@@ -1,0 +1,23 @@
+========================================================================
+TASK NAME: Currency Exchange Rate Changes
+========================================================================
+
+TASK OVERVIEW:
+Analyze how currency exchange rates to US Dollars (USD) transformed during the first half of 2020. Calculate and output the currency code alongside the precise difference between the exchange rate values logged on July 1, 2020, and January 1, 2020.
+
+MATHEMATICAL FORMULA:
+Exchange Rate Difference = (Rate on July 1, 2020) - (Rate on January 1, 2020)
+
+DATA REQUIREMENTS:
+* Isolation Mapping: Filter data points to target two precise timeline snapshots ('2020-01-01' and '2020-07-01').
+* Table Self-Join: Link the table to itself using the source currency identifier to safely line up the historical snapshots concurrently.
+* Columns Needed: source_currency, exchange_difference
+
+TABLE SCHEMA:
+* Table Name: sf_exchange_rate
+* Core Columns:
+  - date (Date) — The calendar date the exchange rate was logged.
+  - exchange_rate (Double Precision) — The currency exchange value to USD.
+  - source_currency (Text) — The standard text ticker code for the origin currency.
+
+========================================================================
