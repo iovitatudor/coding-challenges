@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Sorting By Second Character
+========================================================================
+
+TASK OVERVIEW:
+Arrange a dataset of randomized string identifiers in ascending alphabetical order based exclusively on the value of their second character.
+
+DATA REQUIREMENTS:
+* String Manipulation: Extract exactly a single character starting from the second index position of the ID text.
+* Sorting Hierarchy: Order the records in an ascending alphabetical sequence (A-Z) based on that extracted character.
+* Columns Needed: id, handled_id
+
+TABLE SCHEMA:
+* Table Name: random_id
+* Core Columns:
+  - id (Text) — The randomized string identifier.
+
+========================================================================
