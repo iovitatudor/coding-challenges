@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Customer Volume and Average Order Analysis
+========================================================================
+
+TASK OVERVIEW:
+Audit order transactional history to determine both the total number of unique customers who successfully placed an order and the overall average financial value per order transaction.
+
+DATA REQUIREMENTS:
+* Distinct Identification: Count individual customer profiles utilizing a distinct uniqueness mask to prevent multi-order users from inflating the customer volume tally.
+* Financial Metrics: Calculate the arithmetic mean (AVG) of all order totals logged within the financial transaction column.
+* Columns Needed: customers_qty, average_order_amount
+
+TABLE SCHEMA:
+* Table Name: postmates_orders
+* Core Columns:
+  - customer_id (Big Int) — Unique account tracking identifier for the client making the purchase.
+  - amount (Double Precision) — The total financial value of the order transaction.
+
+========================================================================
