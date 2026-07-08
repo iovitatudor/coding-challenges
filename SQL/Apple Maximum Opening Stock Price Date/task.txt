@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Apple Maximum Opening Stock Price Date
+========================================================================
+
+TASK OVERVIEW:
+Find the specific calendar date (or dates) when Apple's opening stock price reached its absolute historical maximum value.
+
+DATA REQUIREMENTS:
+* Peak Isolation: Identify the maximum value within the stock opening price column ('open').
+* Tie Handling: Structure the filter to return all calendar dates that match this maximum value in case of a pricing tie.
+* Columns Needed: date
+
+TABLE SCHEMA:
+* Table Name: aapl_historical_stock_price
+* Core Columns:
+  - date (Date) — The specific market trading date.
+  - open (Double Precision) — Apple's opening stock price for that day.
+
+========================================================================
