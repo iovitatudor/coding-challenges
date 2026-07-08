@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: Comments Volume Audit per User
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total number of comments received for each user during a strict 30-day window leading up to and including February 10, 2020. Exclude users who did not receive any comments within this specified timeline window.
+
+DATA REQUIREMENTS:
+* Time Lookback Filter: Restrict rows to a clean 30-day period up to and including '2020-02-10' (from '2020-01-12' to '2020-02-10').
+* Status Exclusion: Filter out records where the comment volume equals zero prior to grouping.
+* Aggregation: Compute the sum of the total comments received per user.
+* Columns Needed: user_id, total_number_of_comments
+
+TABLE SCHEMA:
+* Table Name: fb_comments_count
+* Core Columns:
+  - user_id (Big Int) — Unique numerical identifier for the application user profile.
+  - created_at (Date) — The calendar date the comment transaction occurred.
+  - number_of_comments (Big Int) — The volume count of comments logged on that row entry.
+
+========================================================================
