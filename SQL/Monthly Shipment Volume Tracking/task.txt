@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: Monthly Shipment Volume Tracking
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total number of shipments processed per month. A single unique shipment is defined explicitly by a composite combination of the 'shipment_id' and 'sub_id' columns. Output the timeline group formatted as YYYY-MM alongside its corresponding shipment volume.
+
+DATA REQUIREMENTS:
+* String Truncation: Convert calendar shipment dates into standard text strings matching the 'YYYY-MM' format.
+* Composite Uniqueness Counting: Combine and distinct-count the shipment_id and sub_id keys together to ensure complex package entries are aggregated accurately without row volume skewing.
+* Grouping Strategy: Group data collections solely by the monthly timeline string to compile correct high-level monthly trends.
+* Columns Needed: year_month, number_of_shipments
+
+TABLE SCHEMA:
+* Table Name: amazon_shipment
+* Core Columns:
+  - shipment_date (Date) — The date the shipment transaction occurred.
+  - shipment_id (Big Int) — Primary tier tracking identification number.
+  - sub_id (Big Int) — Secondary tier tracking sub-component number.
+
+========================================================================
