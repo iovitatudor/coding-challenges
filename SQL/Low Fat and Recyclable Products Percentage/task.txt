@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: Low Fat and Recyclable Products Percentage
+========================================================================
+
+TASK OVERVIEW:
+Calculate the exact percentage of all products in the database inventory that are classified as both low fat ('is_low_fat' = 'Y') and recyclable ('is_recyclable' = 'Y'). The output must return a single numeric percentage scale value.
+
+DATA REQUIREMENTS:
+* Conditional Isolation: Flag product items that meet both health and environmental criteria concurrently.
+* Safe Decimal Division: Handle division constraints carefully using decimal multipliers (100.0) to prevent integer truncation bugs in PostgreSQL.
+* Percentage Formulation: Divide the matching subset count by the total inventory count, scaled to a 0-100 baseline.
+* Columns Needed: percentage
+
+TABLE SCHEMA:
+* Table Name: facebook_products
+* Core Columns:
+  - product_id (Big Int) — Unique primary tracking key for the product.
+  - is_low_fat (Text) — Flag indicating low fat status ('Y' or 'N').
+  - is_recyclable (Text) — Flag indicating recyclability status ('Y' or 'N').
+
+========================================================================
