@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: User Growth Rate Analysis
+========================================================================
+
+TASK OVERVIEW:
+Find the active user growth rate from December 2020 to January 2021 for each individual corporate account. The growth rate is defined mathematically as the total distinct active users in January 2021 divided by the total distinct active users in December 2020.
+
+DATA REQUIREMENTS:
+* Monthly Segmentation: Calculate distinct user counts for December 2020 and January 2021 independently.
+* Decimal Precision: Multiply counts by a floating-point scalar to prevent integer truncation bugs.
+* Mathematical Formula: Growth Rate = (January 2021 Users) / (December 2020 Users)
+* Columns Needed: account_id, growth_rate
+
+TABLE SCHEMA:
+* Table Name: sf_events
+* Core Columns:
+  - account_id (Varchar) — Unique corporate client account identifier.
+  - user_id (Varchar) — Unique user identifier tracking active engagement.
+  - record_date (Date) — The timestamp tracking when the activity occurred.
+
+========================================================================
