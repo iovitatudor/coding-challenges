@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Users Activity Per Month Day
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total number of posts created for each calendar month number, aggregated completely across all historical years. Combine multi-year month instances (e.g., January 2019 and January 2020) together into single month number buckets.
+
+DATA REQUIREMENTS:
+* Chronological Extraction: Isolate the numeric month index (1 for January, 2 for February) from the date tracking field, stripping away any year-specific values.
+* Grouping Strategy: Segment and group the calculation logs uniformly using the extracted calendar month number.
+* Aggregation: Total up all row items captured inside each month partition block.
+* Columns Needed: month_number, total_number_of_posts
+
+TABLE SCHEMA:
+* Table Name: facebook_posts
+* Core Columns:
+  - post_date (Date) — The calendar date the post was officially published.
+  - post_id (Big Int) — Unique transactional identifier for the post.
+
+========================================================================
