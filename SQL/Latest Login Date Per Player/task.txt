@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Latest Login Date Per Player
+========================================================================
+
+TASK OVERVIEW:
+For each dynamic video game player profile, identify and extract the absolute latest (most recent) calendar date when they successfully logged into the platform system.
+
+DATA REQUIREMENTS:
+* Chronological Targeting: Isolate the maximum or most recent date profile row per user grouping.
+* Row Deduplication: Ensure each discrete player identifier appears exactly once in the final output file list.
+* Columns Needed: player_id, login_date
+
+TABLE SCHEMA:
+* Table Name: players_logins
+* Core Columns:
+  - player_id (Big Int) — Unique numerical identifier for the video game player.
+  - login_date (Date) — The calendar date the user initiated a session.
+
+========================================================================
