@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Sales with Valid Promotion Percentage
+========================================================================
+
+TASK OVERVIEW:
+Evaluate the effectiveness of advertising campaigns by calculating the exact percentage of orders in the online orders table that successfully utilized a valid promotion listed in the online promotions master index table.
+
+DATA REQUIREMENTS:
+* Baseline Retention: Use a LEFT JOIN from the online orders table to the online promotions table to ensure 100% of real order transactions form the calculation baseline and protect the denominator from unused promotions.
+* Match Verification: Identify rows where the order's promotion reference successfully matches a master promotion profile (op.promotion_id IS NOT NULL).
+* Percentage Formulation: Calculate the conditional average scaled to a 100.0 baseline to represent the true conversion metric.
+* Columns Needed: percentage
+
+TABLE SCHEMA:
+
+1. online_orders (oo)
+   - promotion_id (Big Int) — The transaction flag indicating if a promotion was applied during ordering.
+
+2. online_promotions (op)
+   - promotion_id (Big Int) — Unique primary identification number for active advertising campaigns.
+
+========================================================================
