@@ -1,0 +1,25 @@
+========================================================================
+TASK NAME: Paid Users Call Volume Audit (April 2020)
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total number of unique users holding a 'paid' account status who successfully initiated or received any system calls during the month of April 2020. The final output must return a single aggregate count.
+
+DATA REQUIREMENTS:
+* Account Status Filter: Restrict the user base pool to records with an active status tier of 'paid'.
+* Chronological Time Filter: Limit the transaction logs strictly to call events finalized within April 2020 ('2020-04-01' through '2020-04-30' inclusive).
+* Table Association: Implement an INNER JOIN between the user dimension table and the calls transactional record log to automatically isolate active calling accounts.
+* Deduplication Aggregation: Apply a DISTINCT modifier inside the COUNT function to guarantee that multiple phone calls made by a single user do not inflate the total user pool calculation metric.
+* Columns Needed: paid_users_count
+
+TABLE SCHEMA:
+
+1. rc_users (u)
+   - user_id (Big Int) — Unique primary identification number for the system customer.
+   - status (Text) — The monetization tier category flag of the user (e.g., 'paid', 'free').
+
+2. rc_calls (c)
+   - user_id (Big Int) — Foreign key matching back to the customer profile directory.
+   - call_date (Timestamp) — The precise date and time transaction log of when the call was made.
+
+========================================================================
