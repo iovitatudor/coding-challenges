@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: Monthly Active Users January 2021
+========================================================================
+
+TASK OVERVIEW:
+Identify and calculate the total volume of Monthly Active Users (MAU) for the month of January 2021, broken down for each corporate account profile.
+
+DATA REQUIREMENTS:
+* Time Constraint Filter: Restrict the evaluated records strictly to dates within January 2021 ('2021-01-01' to '2021-01-31' inclusive).
+* Unique Aggregation: Count the distinct volume of user identifiers per account to eliminate multi-session activity bloat.
+* Grouping Strategy: Segment the final aggregate calculation metrics uniformly by the account_id dimension.
+* Columns Needed: account_id, monthly_count
+
+TABLE SCHEMA:
+* Table Name: sf_events
+* Core Columns:
+  - account_id (Varchar) — Unique corporate client account identifier.
+  - user_id (Varchar) — Unique identifier tracking user logins or engagements.
+  - record_date (Date) — The timestamp tracking when the activity occurred.
+
+========================================================================
