@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Exclusion Logic Explanation
+========================================================================
+
+TASK OVERVIEW:
+Isolate user records where a specific activity did not occur within a targeted calendar month.
+
+DATA REQUIREMENTS:
+* Logic Filter: Isolate the target month's active records first using an inclusive BETWEEN filter, then extract the remaining unmapped rows using an IS NULL check.
+* Columns Needed: user_id
+
+TABLE SCHEMA:
+* Table Name: rc_users
+* Core Columns:
+  - user_id (Big Int) — Unique account tracking key.
+========================================================================
