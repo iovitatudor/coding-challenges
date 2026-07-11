@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: Users with Many Searches
+========================================================================
+
+TASK OVERVIEW:
+Count the number of users who made more than 5 searches in August 2021.
+
+DATA REQUIREMENTS:
+* Date Boundaries: Filter searches strictly within the month of August 2021.
+* Threshold Evaluation: Isolate users who made more than 5 total searches.
+* Columns Needed: num_users
+
+TABLE SCHEMA:
+* Table Name: fb_searches
+  - user_id (Big Int) — Unique numerical identifier for each specific user.
+  - date (Date) — The calendar date when the search occurred.
+  - search_id (Big Int) — Unique numerical identifier for each search entry.
+  - search_query (Text) — The text string representing the query typed by the user.
+  - age_group (Text) — Demographic grouping classification for the user.
+
+========================================================================
