@@ -1,0 +1,27 @@
+========================================================================
+TASK NAME: Employees' Without Annual Review
+========================================================================
+
+TASK OVERVIEW:
+Return all employees who have never had an annual review. List the most recently hired employees first.
+
+DATA REQUIREMENTS:
+* Exclusion Filtering: Isolate employees who do not exist in the annual review tracking log.
+* Sorting Hierarchy: Sort the resulting dataset in descending order based on hire date.
+* Columns Needed: first_name, last_name, hire_date, termination_date
+
+TABLE SCHEMA:
+* Table Name: uber_employees
+  - id (Big Int) — Unique numerical identifier for the employee.
+  - first_name (Text) — Employee's given name.
+  - last_name (Text) — Employee's family name.
+  - salary (Big Int) — Employee's current annual compensation.
+  - hire_date (Date) — The calendar date the employee joined the company.
+  - termination_date (Date) — The calendar date the employee left the company (if applicable).
+
+* Table Name: uber_annual_review
+  - id (Big Int) — Unique numerical identifier for the review log.
+  - emp_id (Big Int) — Foreign key matching back to uber_employees(id).
+  - review_date (Date) — The calendar date when the annual review occurred.
+
+========================================================================
