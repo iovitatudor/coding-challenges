@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Users With Two Statuses
+========================================================================
+
+TASK OVERVIEW:
+Find users who are both a viewer and streamer.
+
+TABLE SCHEMA:
+Table: twitch_sessions
+- session_end: timestamp without time zone
+- session_id: bigint
+- session_start: timestamp without time zone
+- session_type: text
+- user_id: bigint
+
+========================================================================
