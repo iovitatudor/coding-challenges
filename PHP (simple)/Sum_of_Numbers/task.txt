@@ -1,0 +1,25 @@
+========================================================================
+TASK NAME: Sum of Numbers
+========================================================================
+
+TASK OVERVIEW:
+Read a list of numbers and calculate their sum.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - The first line is an integer indicating the total count of numbers to follow.
+  - The subsequent lines contain exactly one number each.
+* Calculation: Add all the subsequent numbers together.
+* Output Format: Sum: [total]
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input:
+  4
+  10
+  20
+  30
+  40
+* Calculation: 10 + 20 + 30 + 40 = 100
+* Output: Sum: 100
+
+========================================================================
