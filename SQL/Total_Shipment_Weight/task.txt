@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Total Shipment Weight
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total weight for each shipment and add it as a new column.
+Your output needs to have all the existing rows and columns in addition to
+the new column that shows the total weight for each shipment.
+One shipment can have multiple rows.
+
+TABLE SCHEMA:
+Table: amazon_shipment
+- shipment_date: date
+- shipment_id: bigint
+- sub_id: bigint
+- weight: bigint
+
+========================================================================
