@@ -1,0 +1,31 @@
+========================================================================
+TASK NAME: Shopping Receipt
+========================================================================
+
+TASK OVERVIEW:
+Read item details from input streams to calculate total purchase values
+and generate a short formatted receipt output.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: Item name string.
+  - Line 2: Numeric unit price.
+  - Line 3: Whole integer quantity.
+* Output Format:
+  - Item: [item]
+  - Price: $[price] (Two decimal places)
+  - Quantity: [quantity]
+  - Total: $[total] (Price * Quantity, Two decimal places)
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input:
+  Apple
+  1.50
+  3
+* Output:
+  Item: Apple
+  Price: $1.50
+  Quantity: 3
+  Total: $4.50
+
+========================================================================
