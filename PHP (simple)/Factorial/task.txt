@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Factorial
+========================================================================
+
+TASK OVERVIEW:
+Create a function that calculates the factorial of a number.
+
+DATA REQUIREMENTS:
+* Input: Read a single number from standard input (STDIN).
+* Calculation: Multiply all sequential numbers from 1 to N together.
+* Edge Cases: The factorial of 0 must return 1.
+* Output Format: [n]! = [result]
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: 5
+* Calculation: 1 × 2 × 3 × 4 × 5 = 120
+* Output: 5! = 120
+
+========================================================================
