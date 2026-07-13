@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Most Recent Employee Login Details
+========================================================================
+
+TASK OVERVIEW:
+Find all information related to each employee's most recent login.
+
+TABLE SCHEMA:
+Table: worker_logins
+- city: text
+- country: text
+- device_type: text
+- id: bigint
+- ip_address: text
+- login_timestamp: timestamp without time zone
+- region: text
+- worker_id: bigint
+
+========================================================================
