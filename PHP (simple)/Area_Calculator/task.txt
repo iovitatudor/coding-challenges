@@ -1,0 +1,26 @@
+========================================================================
+TASK NAME: Area Calculator
+========================================================================
+
+TASK OVERVIEW:
+Calculate the area of a rectangle, triangle, or circle based on
+dynamic string input types and their matching physical dimensions.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: Shape type string ('rectangle', 'triangle', 'circle').
+  - Next Lines: Dimensions based on shape rules.
+* Shape Rules:
+  - rectangle: next two lines are width and height.
+  - triangle: next two lines are base and height.
+  - circle: next line is the radius.
+* Output Format: Area: [result] formatted to exactly two decimal places.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input:
+  rectangle
+  5
+  3
+* Output: Area: 15.00
+
+========================================================================
