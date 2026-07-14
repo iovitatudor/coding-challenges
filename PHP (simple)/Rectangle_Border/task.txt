@@ -1,0 +1,27 @@
+========================================================================
+TASK NAME: Rectangle Border
+========================================================================
+
+TASK OVERVIEW:
+Print a rectangle border made of stars based on input dimensions.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: Width of the rectangle (integer).
+  - Line 2: Height of the rectangle (integer).
+* Output Format:
+  - The first and last rows are full rows of stars.
+  - The rows in between have a star at the start and end, with spaces
+    in the middle. No trailing whitespace characters.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input:
+  5
+  4
+* Output:
+  *****
+  *   *
+  *   *
+  *****
+
+========================================================================
