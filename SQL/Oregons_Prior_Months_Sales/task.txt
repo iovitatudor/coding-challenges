@@ -1,0 +1,27 @@
+========================================================================
+TASK NAME: Oregon's Prior Month's Sales
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total revenue generated from Oregon-based customers for
+April 2022.
+
+TABLE SCHEMA:
+Table: online_orders
+- cost_in_dollars: bigint
+- customer_id: bigint
+- date_sold: date
+- product_id: bigint
+- promotion_id: bigint
+- units_sold: bigint
+
+Table: online_customers
+- address: text
+- age: bigint
+- email: text
+- first_name: text
+- id: bigint
+- last_name: text
+- state: text
+
+========================================================================
