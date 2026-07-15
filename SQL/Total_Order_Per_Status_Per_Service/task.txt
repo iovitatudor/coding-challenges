@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Total Order Per Status Per Service
+========================================================================
+
+TASK OVERVIEW:
+Calculate the count of orders for each status of each service.
+Your output should include the service name, status of the order,
+and the number of orders.
+
+TABLE SCHEMA:
+Table: uber_orders
+- monetary_value: double precision
+- number_of_orders: bigint
+- order_date: date
+- service_name: text
+- status_of_order: text
+
+========================================================================
