@@ -1,0 +1,31 @@
+========================================================================
+TASK NAME: Find the average of inspections scores between 91 and 100
+========================================================================
+
+TASK OVERVIEW:
+Find the mean of inspections scores between 91 and 100.
+
+TABLE SCHEMA:
+Table: los_angeles_restaurant_health_inspections
+- activity_date: date
+- employee_id: text
+- facility_address: text
+- facility_city: text
+- facility_id: text
+- facility_name: text
+- facility_state: text
+- facility_zip: text
+- grade: text
+- owner_id: text
+- owner_name: text
+- pe_description: text
+- program_element_pe: bigint
+- program_name: text
+- program_status: text
+- record_id: text
+- score: bigint
+- serial_number: text
+- service_code: bigint
+- service_description: text
+
+========================================================================
