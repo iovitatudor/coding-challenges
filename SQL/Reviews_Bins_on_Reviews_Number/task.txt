@@ -1,0 +1,32 @@
+========================================================================
+TASK NAME: Reviews Bins on Reviews Number
+========================================================================
+
+TASK OVERVIEW:
+Classify each listing based on its number of reviews into specified categories
+(NO, FEW, SOME, MANY, A LOT) and output the price along with the category.
+
+TABLE SCHEMA:
+Table: airbnb_search_details
+- accommodates: bigint
+- amenities: text
+- bathrooms: bigint
+- bed_type: text
+- bedrooms: bigint
+- beds: bigint
+- cancellation_policy: text
+- city: text
+- cleaning_fee: boolean
+- host_identity_verified: text
+- host_response_rate: text
+- host_since: date
+- id: bigint
+- neighbourhood: text
+- number_of_reviews: bigint
+- price: double precision
+- property_type: text
+- review_scores_rating: double precision
+- room_type: text
+- zipcode: bigint
+
+========================================================================
