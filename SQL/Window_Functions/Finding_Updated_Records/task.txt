@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Finding Updated Records
+========================================================================
+
+TASK OVERVIEW:
+Identify the current salary for each employee, assuming salary is
+non-decreasing over time. The current salary is the largest value among
+their records. Output id, first name, last name, department ID, and
+current salary. Order by employee ID in ascending order.
+
+TABLE SCHEMA:
+Table: ms_employee_salary
+- department_id: bigint
+- first_name: text
+- id: bigint
+- last_name: text
+- salary: bigint
+
+========================================================================
