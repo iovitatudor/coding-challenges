@@ -1,0 +1,25 @@
+========================================================================
+TASK NAME: Ticket Price
+========================================================================
+
+TASK OVERVIEW:
+Determine the ticket type and price based on age.
+
+DATA REQUIREMENTS:
+* Age Categories:
+  - Child (under 12 years old): $5
+  - Adult (12 to 64 years old): $15
+  - Senior (65 years old or more): $8
+* Input Format:
+  - Line 1: Age (integer).
+* Output Format:
+  - Line 1: [type]
+  - Line 2: $[price]
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: 25
+* Output:
+  Adult
+  $15
+
+========================================================================
