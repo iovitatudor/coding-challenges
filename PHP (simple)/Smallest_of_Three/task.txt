@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Smallest of Three
+========================================================================
+
+TASK OVERVIEW:
+Find the smallest of three numbers.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Three distinct sequential lines, each containing one number (integer).
+* Output Format:
+  - Smallest: [number]
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input:
+  7
+  2
+  9
+* Output:
+  Smallest: 2
+
+========================================================================
