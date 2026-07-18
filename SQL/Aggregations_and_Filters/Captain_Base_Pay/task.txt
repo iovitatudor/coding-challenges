@@ -1,0 +1,25 @@
+========================================================================
+TASK NAME: Captain Base Pay
+========================================================================
+
+TASK OVERVIEW:
+Find the base pay for Police Captains.
+Output the employee name along with the corresponding base pay.
+
+TABLE SCHEMA:
+Table: sf_public_salaries
+- agency: text
+- basepay: double precision
+- benefits: double precision
+- employeename: text
+- id: bigint
+- jobtitle: text
+- notes: double precision
+- otherpay: double precision
+- overtimepay: double precision
+- status: text
+- totalpay: double precision
+- totalpaybenefits: double precision
+- year: bigint
+
+========================================================================
