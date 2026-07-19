@@ -1,0 +1,23 @@
+========================================================================
+TASK NAME: Star Triangle
+========================================================================
+
+TASK OVERVIEW:
+Print a right triangle made of stars.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: An integer N representing the total number of rows.
+* Output Format:
+  - Print N rows where each row contains exactly its current row index
+    count of '*' characters, followed by a newline. No extra spaces.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: 4
+* Output:
+  *
+  **
+  ***
+  ****
+
+========================================================================
