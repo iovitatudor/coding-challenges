@@ -1,0 +1,24 @@
+========================================================================
+TASK NAME: Workers With The Highest Salaries
+========================================================================
+
+TASK OVERVIEW:
+Find the title(s) of the worker(s) with the highest salary among workers
+who have a corresponding record in the title table. If multiple employees
+have the same highest salary, include all their job titles.
+
+TABLE SCHEMA:
+Table: worker
+- department: text
+- first_name: text
+- joining_date: date
+- last_name: text
+- salary: bigint
+- worker_id: bigint
+
+Table: title
+- affected_from: date
+- worker_ref_id: bigint
+- worker_title: text
+
+========================================================================
