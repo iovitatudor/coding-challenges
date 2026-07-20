@@ -1,0 +1,28 @@
+========================================================================
+TASK NAME: Email Preference Missing
+========================================================================
+
+TASK OVERVIEW:
+Find libraries from the 2016 circulation year that have no email address
+provided but have their notice preference set to email. Output their
+home library code.
+
+TABLE SCHEMA:
+Table: library_usage
+- age_range: text
+- circulation_active_month: text
+- circulation_active_year: double precision
+- home_library_code: text
+- home_library_definition: text
+- notice_preference_code: text
+- notice_preference_definition: text
+- outside_of_county: boolean
+- patron_type_code: bigint
+- patron_type_definition: text
+- provided_email_address: boolean
+- supervisor_district: double precision
+- total_checkouts: bigint
+- total_renewals: bigint
+- year_patron_registered: bigint
+
+========================================================================
