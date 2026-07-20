@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Day of Week
+========================================================================
+
+TASK OVERVIEW:
+Convert a day number (1 to 7) to its corresponding day name string.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: Day number (integer).
+* Mapping Rules:
+  - 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday,
+    5 = Friday, 6 = Saturday, 7 = Sunday.
+  - Any other value must return 'Invalid'.
+* Output Format:
+  - Print only the resulting string.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: 3
+* Output: Wednesday
+
+========================================================================
