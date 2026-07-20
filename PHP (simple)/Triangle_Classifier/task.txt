@@ -1,0 +1,26 @@
+========================================================================
+TASK NAME: Triangle Classifier
+========================================================================
+
+TASK OVERVIEW:
+Classify a triangle based on its side lengths.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Three distinct sequential lines, each containing a side length (integer).
+* Validation Rules:
+  - A triangle is valid if the sum of any two sides is strictly greater
+    than the third side. Otherwise, output 'Not a triangle'.
+* Classification Rules:
+  - Equilateral: All three sides are equal.
+  - Isosceles: Exactly two sides are equal.
+  - Scalene: No sides are equal.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input:
+  3
+  4
+  5
+* Output: Scalene
+
+========================================================================
