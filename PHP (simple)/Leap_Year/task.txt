@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Leap Year
+========================================================================
+
+TASK OVERVIEW:
+Determine if a given year is a leap year based on chronological
+divisibility rules.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: Year (integer).
+* Validation Rules:
+  - Divisible by 4.
+  - NOT divisible by 100, unless it is also divisible by 400.
+* Output Format:
+  - 'Leap year' or 'Not a leap year'
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: 2024
+* Output: Leap year
+
+========================================================================
