@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Calculate Samantha's and Lisa's total sales revenue
+========================================================================
+
+TASK OVERVIEW:
+What is the total sales revenue of Samantha and Lisa?
+
+TABLE SCHEMA:
+Table: sales_performance
+- id: bigint
+- sales_revenue: bigint
+- salesperson: text
+- widget_sales: bigint
+
+========================================================================
