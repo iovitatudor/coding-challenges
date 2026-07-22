@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Count Vowels
+========================================================================
+
+TASK OVERVIEW:
+Count the number of vowels in a string case-insensitively.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: A text string.
+* Target Characters: a, e, i, o, u (both upper and lowercase).
+* Output Format:
+  - Vowels: [count]
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: Hello World
+* Output: Vowels: 3
+
+========================================================================
