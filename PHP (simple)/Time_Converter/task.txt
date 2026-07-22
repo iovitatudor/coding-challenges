@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Time Converter
+========================================================================
+
+TASK OVERVIEW:
+Convert a number of total seconds into hours, minutes, and seconds.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: An integer representing total seconds.
+* Output Format:
+  - [h]h [m]m [s]s followed by a newline.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: 3661
+* Output: 1h 1m 1s
+
+========================================================================
