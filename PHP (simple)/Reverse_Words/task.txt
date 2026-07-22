@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Reverse Words
+========================================================================
+
+TASK OVERVIEW:
+Read a sentence from input and print the words in reverse order
+separated by spaces.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: A text sentence string.
+* Output Format:
+  - The words in reverse order, separated by a single space.
+    No extra trailing spaces.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: I love coding
+* Output: coding love I
+
+========================================================================
