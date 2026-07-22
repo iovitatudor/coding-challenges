@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: Remove Duplicates
+========================================================================
+
+TASK OVERVIEW:
+Remove duplicate characters from a string, keeping only the first of
+each group.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: A text string.
+* Output Format:
+  - Print the resulting string containing only unique characters.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: aabbccdd
+* Output: abcd
+* Input: abcabc
+* Output: abc
+
+========================================================================
