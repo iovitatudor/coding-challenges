@@ -1,0 +1,26 @@
+========================================================================
+TASK NAME: Wine varieties tasted by 'Roger Voss'
+========================================================================
+
+TASK OVERVIEW:
+Find wine varieties tasted by 'Roger Voss' and with a value in the
+'region_1' column of the dataset. Output unique variety names only.
+
+TABLE SCHEMA:
+Table: winemag_p2
+- country: text
+- description: text
+- designation: text
+- id: bigint
+- points: bigint
+- price: double precision
+- province: text
+- region_1: text
+- region_2: text
+- taster_name: text
+- taster_twitter_handle: text
+- title: text
+- variety: text
+- winery: text
+
+========================================================================

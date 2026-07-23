@@ -1,0 +1,25 @@
+========================================================================
+TASK NAME: Longest Word
+========================================================================
+
+TASK OVERVIEW:
+Find the longest word in a sentence. If two or more words share the maximum
+length, retain and output the one that appears first in the sentence. Words are
+separated by single spaces.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: A single line containing a text sentence (words separated by spaces).
+* Output Format:
+  - Print a single word representing the longest word in the sentence.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: The quick brown fox jumped over the lazy dog
+* Output: jumped
+  (Reason: "jumped" has 6 letters, the most of any word in the sentence.)
+
+* Input: red blue green cyan
+* Output: green
+  (Reason: "green" has 5 letters. "blue" and "cyan" have 4 letters.)
+
+========================================================================
