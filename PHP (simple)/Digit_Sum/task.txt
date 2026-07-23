@@ -1,0 +1,24 @@
+========================================================================
+TASK NAME: Digit Sum
+========================================================================
+
+TASK OVERVIEW:
+Calculate the sum of all individual digits in a given positive integer and
+print the result in the format "Digit sum: [result]".
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: A positive integer.
+* Output Format:
+  - Print "Digit sum: [result]".
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: 1234
+* Output: Digit sum: 10
+  (Reason: 1 + 2 + 3 + 4 = 10.)
+
+* Input: 905
+* Output: Digit sum: 14
+  (Reason: 9 + 0 + 5 = 14.)
+
+========================================================================
