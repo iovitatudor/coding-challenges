@@ -1,0 +1,29 @@
+========================================================================
+TASK NAME: Hour Of Highest Gas Expense
+========================================================================
+
+TASK OVERVIEW:
+Find the hour of the single ride with the highest gasoline cost. Assume
+only one ride has this maximum, so exactly one hour qualifies.
+
+DATA REQUIREMENTS:
+* Input Table: lyft_rides
+  - index (bigint)
+  - weather (text)
+  - hour (bigint)
+  - travel_distance (double precision)
+  - gasoline_cost (double precision)
+* Output Format:
+  - Print / select a single column "hour" for the record with max gasoline_cost.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input:
+  index | weather | hour | travel_distance | gasoline_cost
+  0     | cloudy  | 7    | 24.47           | 1.13
+  1     | cloudy  | 23   | 23.67           | 1.99
+  2     | sunny   | 17   | 20.93           | 0.86
+* Output:
+  hour: 23
+  (Reason: 1.99 is the highest gasoline cost, occurring at hour 23.)
+
+========================================================================
