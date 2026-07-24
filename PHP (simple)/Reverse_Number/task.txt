@@ -1,0 +1,24 @@
+========================================================================
+TASK NAME: Reverse Number
+========================================================================
+
+TASK OVERVIEW:
+Reverse the digits of a given positive integer and output the resulting
+number with no leading zeros.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: A positive integer N.
+* Output Format:
+  - Print the integer formed by reversing the digits of N.
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: 1234
+* Output: 4321
+  (Reason: Reversing 1234 yields 4321.)
+
+* Input: 1200
+* Output: 21
+  (Reason: Reversing 1200 yields 0021, which becomes 21 without leading zeros.)
+
+========================================================================
