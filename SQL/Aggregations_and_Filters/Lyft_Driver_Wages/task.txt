@@ -1,0 +1,23 @@
+========================================================================
+TASK NAME: Lyft Driver Wages
+========================================================================
+
+TASK OVERVIEW:
+Filter the `lyft_drivers` table to find all drivers earning either
+$30,000 or less, or $70,000 or more per year.
+
+DATA REQUIREMENTS:
+* Table: lyft_drivers
+* Columns:
+  - end_date (date)
+  - index (bigint)
+  - start_date (date)
+  - yearly_salary (bigint)
+
+FILTER CONDITIONS:
+* yearly_salary <= 30000 OR yearly_salary >= 70000
+
+EXPECTED OUTPUT FORMAT:
+* Select all columns (*) matching the criteria.
+
+========================================================================
