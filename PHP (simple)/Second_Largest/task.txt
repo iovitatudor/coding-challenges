@@ -1,0 +1,44 @@
+========================================================================
+TASK NAME: Second Largest
+========================================================================
+
+TASK OVERVIEW:
+Given a count N followed by N integers, find and print the second-largest distinct number in the list.
+
+SPECIAL CASES:
+- If duplicate highest values exist (e.g., 5, 5, 3), ignore duplicates so
+  that the next distinct lower value is selected (e.g., 3).
+- If all numbers in the list are identical (e.g., 10, 10, 10), output
+  that identical value as the result.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: An integer N (the count of numbers).
+  - Next N lines: One integer per line.
+* Output Format:
+  - Print "Second largest: [number]".
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input:
+  4
+  5
+  2
+  9
+  7
+* Output: Second largest: 7
+
+* Input:
+  3
+  5
+  5
+  3
+* Output: Second largest: 3
+
+* Input:
+  3
+  10
+  10
+  10
+* Output: Second largest: 10
+
+========================================================================
