@@ -1,0 +1,23 @@
+========================================================================
+TASK NAME: Artist Appearance Count
+========================================================================
+
+TASK OVERVIEW:
+Find how many times each artist appeared on the Spotify ranking list.
+Order the results by the number of occurrences in descending order.
+
+DATA REQUIREMENTS:
+* Table: spotify_worldwide_daily_song_ranking
+* Relevant Columns:
+  - artist (text)
+
+AGGREGATION & ORDERING:
+* Group by artist.
+* Count total occurrences using COUNT(*).
+* Order by the appearance count in DESCENDING order.
+
+EXPECTED OUTPUT FORMAT:
+* artist (text)
+* occurrences / number of appearances (bigint)
+
+========================================================================
