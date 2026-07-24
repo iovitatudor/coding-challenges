@@ -1,0 +1,25 @@
+========================================================================
+TASK NAME: Find all Lyft rides which happened on rainy days before noon
+========================================================================
+
+TASK OVERVIEW:
+Find all records from the `lyft_rides` table where the ride occurred
+during rainy weather and before noon (12:00 PM).
+
+DATA REQUIREMENTS:
+* Table: lyft_rides
+* Columns:
+  - gasoline_cost (double precision)
+  - hour (bigint)
+  - index (bigint)
+  - travel_distance (double precision)
+  - weather (text)
+
+FILTER CONDITIONS:
+* Weather condition contains "rainy" (case-insensitive).
+* Hour is strictly less than 12 (hour < 12).
+
+EXPECTED OUTPUT FORMAT:
+* Select all columns (*) matching the criteria.
+
+========================================================================
