@@ -1,0 +1,26 @@
+========================================================================
+TASK NAME: Collatz Steps
+========================================================================
+
+TASK OVERVIEW:
+Calculate the number of steps required to transform a positive integer
+into 1 using the Collatz sequence rules:
+- If the number is even, divide it by 2.
+- If the number is odd, multiply it by 3 and add 1.
+
+DATA REQUIREMENTS:
+* Input Format:
+  - Line 1: A single positive integer N.
+* Output Format:
+  - Print "Steps: [count]".
+
+EXAMPLES & EXPECTED OUTPUT:
+* Input: 6
+* Output: Steps: 8
+  (Reason: Sequence is 6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1, taking 8 steps.)
+
+* Input: 1
+* Output: Steps: 0
+  (Reason: Already at 1, takes 0 steps.)
+
+========================================================================
