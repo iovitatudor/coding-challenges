@@ -1,0 +1,23 @@
+========================================================================
+TASK NAME: Balanced Brackets
+========================================================================
+
+TASK OVERVIEW:
+Given a string containing only bracket characters '(', ')', '[', and ']',
+determine whether the sequence of opening and closing brackets is balanced.
+
+RULES:
+- Every opening bracket must be closed by the same type of bracket.
+- Brackets must be closed in the correct order.
+- An empty stack at the end indicates balance.
+
+INPUT / OUTPUT:
+* Input: A string of brackets from STDIN.
+* Output: Print "Yes" if balanced, "No" otherwise.
+
+EXAMPLES:
+* Input: ([]) -> Output: Yes
+* Input: ([)] -> Output: No
+* Input: ]    -> Output: No
+
+========================================================================
