@@ -1,0 +1,26 @@
+========================================================================
+TASK NAME: Top Ranked Songs
+========================================================================
+
+TASK OVERVIEW:
+Find all songs that have reached the #1 position on the Spotify ranking list.
+Output the track name and the total number of times it hit position 1.
+Order the results by the number of times in top position descending.
+
+DATA REQUIREMENTS:
+* Table: spotify_worldwide_daily_song_ranking
+* Relevant Columns:
+  - trackname (text)
+  - position (bigint)
+
+FILTERING & AGGREGATION:
+* Filter rows where position = 1.
+* Group by trackname.
+* Count occurrences using COUNT(*).
+* Order by the count in DESCENDING order.
+
+EXPECTED OUTPUT FORMAT:
+* trackname (text)
+* times_top_ranked / number_of_times (bigint)
+
+========================================================================
