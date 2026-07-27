@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: April Admin Employees
+========================================================================
+
+TASK OVERVIEW:
+Find the number of employees working in the Admin department who joined
+in April or later, in any year.
+
+DATA REQUIREMENTS:
+* Table: worker
+* Columns:
+  - department (text)
+  - first_name (text)
+  - joining_date (date)
+  - last_name (text)
+  - salary (bigint)
+  - worker_id (bigint)
+
+========================================================================
