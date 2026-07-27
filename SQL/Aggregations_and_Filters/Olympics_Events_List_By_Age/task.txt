@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Olympics Events List By Age
+========================================================================
+
+TASK OVERVIEW:
+Find the lowest, average, and highest ages of athletes across all Olympics.
+
+SPECIAL INSTRUCTIONS:
+- If an athlete participated in more than one discipline at a single
+  Olympic Games, treat each row as a separate record (no need to deduplicate).
+
+DATA REQUIREMENTS:
+* Table: olympics_athletes_events
+* Relevant Columns:
+  - age (double precision)
+
+EXPECTED OUTPUT FORMAT:
+* lowest_age (MIN)
+* average_age (AVG)
+* highest_age (MAX)
+
+========================================================================
