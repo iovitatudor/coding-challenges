@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Departments With 5 Employees
+========================================================================
+
+TASK OVERVIEW:
+Find all departments that have 5 or more employees.
+
+DATA REQUIREMENTS:
+* Table: employee
+* Relevant Columns:
+  - department (text)
+  - id (bigint)
+
+AGGREGATION & FILTERING:
+* GROUP BY department
+* HAVING COUNT(id) >= 5 (or COUNT(*) >= 5)
+
+EXPECTED OUTPUT FORMAT:
+* department (text)
+* number_of_employees (bigint)
+
+========================================================================
