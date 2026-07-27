@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Athletes Older Than 40 Winning Bronze or Silver
+========================================================================
+
+TASK OVERVIEW:
+Find all athletes who were older than 40 years old when they won either
+a Bronze or Silver medal.
+
+DATA REQUIREMENTS:
+* Table: olympics_athletes_events
+* Columns:
+  - age (double precision)
+  - medal (text)
+
+FILTER CONDITIONS:
+* age > 40
+* medal is either Bronze or Silver (case-insensitive)
+
+EXPECTED OUTPUT FORMAT:
+* Select all relevant athlete/event columns matching the criteria.
+
+========================================================================
