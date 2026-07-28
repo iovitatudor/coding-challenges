@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: First Names With Six Letters Ending in 'h'
+========================================================================
+
+TASK OVERVIEW:
+Find all workers whose first name contains 6 letters and also ends with
+the letter 'h'. Display all information about the workers in the output.
+
+DATA REQUIREMENTS:
+* Table: worker
+* Columns:
+  - department (text)
+  - first_name (text)
+  - joining_date (date)
+  - last_name (text)
+  - salary (bigint)
+  - worker_id (bigint)
+
+========================================================================
