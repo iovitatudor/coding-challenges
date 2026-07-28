@@ -1,0 +1,33 @@
+========================================================================
+TASK NAME: Inspection For Glassell Coffee Shop
+========================================================================
+
+TASK OVERVIEW:
+Find all inspection details made for facilities owned by
+'GLASSELL COFFEE SHOP LLC'. Output all columns.
+
+DATA REQUIREMENTS:
+* Table: los_angeles_restaurant_health_inspections
+* Columns:
+  - activity_date (date)
+  - employee_id (text)
+  - facility_address (text)
+  - facility_city (text)
+  - facility_id (text)
+  - facility_name (text)
+  - facility_state (text)
+  - facility_zip (text)
+  - grade (text)
+  - owner_id (text)
+  - owner_name (text)
+  - pe_description (text)
+  - program_element_pe (bigint)
+  - program_name (text)
+  - program_status (text)
+  - record_id (text)
+  - score (bigint)
+  - serial_number (text)
+  - service_code (bigint)
+  - service_description (text)
+
+========================================================================
