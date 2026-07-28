@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Find Drafts Containing Optimism
+========================================================================
+
+TASK OVERVIEW:
+Find all files from the table whose filename starts with 'draft' and
+whose contents contain the word 'optimism'. Output all columns.
+
+DATA REQUIREMENTS:
+* Table: google_file_store
+* Columns:
+  - filename (text)
+  - contents (text)
+
+========================================================================
