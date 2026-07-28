@@ -1,0 +1,31 @@
+========================================================================
+TASK NAME: Number of Violations
+========================================================================
+
+TASK OVERVIEW:
+Count the total number of violations that occurred at 'Roxanne Cafe'
+for each year, based on the inspection date. Output the year and the
+corresponding number of violations in ascending order of the year.
+
+DATA REQUIREMENTS:
+* Table: sf_restaurant_health_violations
+* Columns:
+  - business_address (text)
+  - business_city (text)
+  - business_id (bigint)
+  - business_latitude (double precision)
+  - business_location (text)
+  - business_longitude (double precision)
+  - business_name (text)
+  - business_phone_number (double precision)
+  - business_postal_code (double precision)
+  - business_state (text)
+  - inspection_date (date)
+  - inspection_id (text)
+  - inspection_score (double precision)
+  - inspection_type (text)
+  - risk_category (text)
+  - violation_description (text)
+  - violation_id (text)
+
+========================================================================
