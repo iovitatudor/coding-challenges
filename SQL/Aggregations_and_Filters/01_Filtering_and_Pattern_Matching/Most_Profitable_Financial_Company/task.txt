@@ -1,0 +1,23 @@
+========================================================================
+TASK NAME: Most Profitable Financial Company
+========================================================================
+
+TASK OVERVIEW:
+Find the most profitable company from the financial sector.
+Output the result along with the continent.
+
+DATA REQUIREMENTS:
+* Table: forbes_global_2010_2014
+* Columns:
+  - assets (double precision)
+  - company (text)
+  - continent (text)
+  - country (text)
+  - industry (text)
+  - marketvalue (double precision)
+  - profits (double precision)
+  - rank (bigint)
+  - sales (double precision)
+  - sector (text)
+
+========================================================================
