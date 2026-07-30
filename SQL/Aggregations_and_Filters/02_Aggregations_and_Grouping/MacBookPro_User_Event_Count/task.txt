@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: MacBookPro User Event Count
+========================================================================
+
+TASK OVERVIEW:
+Count the number of user events performed by MacBookPro users.
+Output the result along with the event name.
+Sort the result based on the event count in descending order.
+
+DATA REQUIREMENTS:
+* Table: playbook_events
+* Columns:
+  - device (text)
+  - event_name (text)
+  - event_type (text)
+  - location (text)
+  - occurred_at (timestamp without time zone)
+  - user_id (bigint)
+
+========================================================================
