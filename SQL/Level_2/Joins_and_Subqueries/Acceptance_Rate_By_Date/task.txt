@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Acceptance Rate By Date
+========================================================================
+
+TASK OVERVIEW:
+Calculate the friend acceptance rate for each date when friend requests
+were sent. A request is sent if action = sent and accepted if action = accepted.
+If a request is not accepted, there is no record of it being accepted in the table.
+
+The output will only include dates where requests were sent and at least
+one of them was accepted (acceptance can occur on any date after the request
+is sent).
+
+DATA REQUIREMENTS:
+* Table: fb_friend_requests
+* Columns:
+  - action (text)
+  - date (date)
+  - user_id_receiver (text)
+  - user_id_sender (text)
+
+========================================================================
