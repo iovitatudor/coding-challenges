@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: Risky Projects
+========================================================================
+
+TASK OVERVIEW:
+Identify projects that are overbudget. A project is overbudget if the
+total prorated cost of all assigned employees exceeds the project's budget.
+
+Prorate each employee's annual salary based on the exact period they work
+on the project relative to a 365-day year:
+  prorated_expense = (end_date - start_date) * (annual_salary / 365.0)
+
+Round the total prorated employee expenses UP to the nearest dollar (CEIL).
+
+DATA REQUIREMENTS:
+* Tables:
+  - linkedin_projects (id, title, budget, start_date, end_date)
+  - linkedin_emp_projects (emp_id, project_id)
+  - linkedin_employees (id, first_name, last_name, salary)
+
+========================================================================
