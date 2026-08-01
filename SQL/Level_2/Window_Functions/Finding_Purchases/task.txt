@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Finding Purchases
+========================================================================
+
+TASK OVERVIEW:
+Identify returning active users by finding users who made a repeat purchase
+within 7 days or less of their previous transaction, excluding same-day purchases.
+Output a list of these user_id.
+
+DATA REQUIREMENTS:
+* Table: amazon_transactions
+* Columns:
+  - created_at (date)
+  - id (bigint)
+  - item (text)
+  - revenue (bigint)
+  - user_id (bigint)
+
+========================================================================
