@@ -1,0 +1,26 @@
+========================================================================
+TASK NAME: Number Of Units Per Nationality
+========================================================================
+
+TASK OVERVIEW:
+Write a query that returns how many different apartment-type units (counted by distinct unit_id) are owned by people under 30, grouped by their nationality. Sort the results by the number of apartments in descending order.
+
+DATA REQUIREMENTS:
+* Table: airbnb_hosts
+* Columns:
+  - age (bigint)
+  - gender (text)
+  - host_id (bigint)
+  - nationality (text)
+
+* Table: airbnb_units
+* Columns:
+  - city (text)
+  - country (text)
+  - host_id (bigint)
+  - n_bedrooms (bigint)
+  - n_beds (bigint)
+  - unit_id (text)
+  - unit_type (text)
+
+========================================================================
