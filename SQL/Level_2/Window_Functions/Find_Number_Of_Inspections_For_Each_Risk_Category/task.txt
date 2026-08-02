@@ -1,0 +1,32 @@
+========================================================================
+TASK NAME: Find the number of inspections for each risk category by inspection type
+========================================================================
+
+TASK OVERVIEW:
+Find the number of inspections that resulted in each risk category per each inspection type.
+Consider the records with no risk category value belongs to a separate category.
+Output the result along with the corresponding inspection type and the corresponding total number of inspections per that type. The output should be pivoted, meaning that each risk category + total number should be a separate column.
+Order the result based on the number of inspections per inspection type in descending order.
+
+DATA REQUIREMENTS:
+* Table: sf_restaurant_health_violations
+* Columns:
+  - business_address (text)
+  - business_city (text)
+  - business_id (bigint)
+  - business_latitude (double precision)
+  - business_location (text)
+  - business_longitude (double precision)
+  - business_name (text)
+  - business_phone_number (double precision)
+  - business_postal_code (double precision)
+  - business_state (text)
+  - inspection_date (date)
+  - inspection_id (text)
+  - inspection_score (double precision)
+  - inspection_type (text)
+  - risk_category (text)
+  - violation_description (text)
+  - violation_id (text)
+
+========================================================================
