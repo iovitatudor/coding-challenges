@@ -1,0 +1,40 @@
+========================================================================
+TASK NAME: Reindex and Group User Subscriptions
+========================================================================
+
+TASK OVERVIEW:
+You are given a flat array of subscription records retrieved from a database.
+Write a PHP function `groupSubscriptionsByUser(array $subscriptions): array` that:
+
+1. Groups active subscriptions ('status' === 'active') by their `user_id`.
+2. Ignores any subscriptions where 'status' is NOT 'active'.
+3. For each user, sort their active subscriptions by `amount` in DESCENDING order.
+4. Output an associative array where each key is the `user_id`, and the value
+   is an array of their sorted active subscription items (each item containing
+   only 'plan_name' and 'amount').
+
+INPUT DATA:
+$subscriptions = [
+    ['id' => 1, 'user_id' => 101, 'plan_name' => 'Basic', 'amount' => 10, 'status' => 'active'],
+    ['id' => 2, 'user_id' => 102, 'plan_name' => 'Pro',   'amount' => 30, 'status' => 'canceled'],
+    ['id' => 3, 'user_id' => 101, 'plan_name' => 'Pro',   'amount' => 25, 'status' => 'active'],
+    ['id' => 4, 'user_id' => 103, 'plan_name' => 'Basic', 'amount' => 10, 'status' => 'active'],
+    ['id' => 5, 'user_id' => 101, 'plan_name' => 'VIP',   'amount' => 50, 'status' => 'active'],
+    ['id' => 6, 'user_id' => 102, 'plan_name' => 'Basic', 'amount' => 12, 'status' => 'active'],
+];
+
+EXPECTED OUTPUT:
+[
+    101 => [
+        ['plan_name' => 'VIP', 'amount' => 50],
+        ['plan_name' => 'Pro', 'amount' => 25],
+        ['plan_name' => 'Basic', 'amount' => 10],
+    ],
+    103 => [
+        ['plan_name' => 'Basic', 'amount' => 10],
+    ],
+    102 => [
+        ['plan_name' => 'Basic', 'amount' => 12],
+    ],
+]
+========================================================================
