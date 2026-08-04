@@ -1,0 +1,42 @@
+========================================================================
+TASK NAME: Find all possible varieties which occur in either of the winemag datasets
+========================================================================
+
+TASK OVERVIEW:
+Find all possible varieties which occur in either of the winemag datasets.
+Output unique variety values only.
+Sort records based on the variety in ascending order.
+
+DATA REQUIREMENTS:
+* Table: winemag_p1
+* Columns:
+  - country (text)
+  - description (text)
+  - designation (text)
+  - id (bigint)
+  - points (bigint)
+  - price (double precision)
+  - province (text)
+  - region_1 (text)
+  - region_2 (text)
+  - variety (text)
+  - winery (text)
+
+* Table: winemag_p2
+* Columns:
+  - country (text)
+  - description (text)
+  - designation (text)
+  - id (bigint)
+  - points (bigint)
+  - price (double precision)
+  - province (text)
+  - region_1 (text)
+  - region_2 (text)
+  - taster_name (text)
+  - taster_twitter_handle (text)
+  - title (text)
+  - variety (text)
+  - winery (text)
+
+========================================================================

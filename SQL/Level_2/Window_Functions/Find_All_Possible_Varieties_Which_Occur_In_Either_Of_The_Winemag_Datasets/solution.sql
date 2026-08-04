@@ -1,0 +1,6 @@
+SELECT variety
+FROM winemag_p1
+UNION
+SELECT variety
+FROM winemag_p2
+ORDER BY variety ASC;
