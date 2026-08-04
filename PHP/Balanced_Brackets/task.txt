@@ -1,0 +1,27 @@
+========================================================================
+TASK NAME: Validate Balanced Brackets
+========================================================================
+
+TASK OVERVIEW:
+Write a PHP function `isValidBrackets(string $input): bool` that determines if
+an input string containing brackets `()`, `{}`, and `[]` has valid opening and
+closing bracket pairs in the correct order.
+
+Requirements:
+1. Every open bracket must be closed by the matching type of bracket.
+2. Open brackets must be closed in the correct order (LIFO - Last In, First Out).
+3. Any unclosed opening bracket or unmatched closing bracket makes the string invalid.
+4. Return `true` if valid, `false` otherwise.
+
+INPUT DATA:
+$test1 = "()[]{}";
+$test2 = "([)]";
+$test3 = "{[]}";
+$test4 = "(";
+
+EXPECTED OUTPUT:
+isValidBrackets($test1); // true
+isValidBrackets($test2); // false
+isValidBrackets($test3); // true
+isValidBrackets($test4); // false
+========================================================================
