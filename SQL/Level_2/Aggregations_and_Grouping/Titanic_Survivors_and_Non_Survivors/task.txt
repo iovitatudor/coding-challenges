@@ -1,0 +1,29 @@
+========================================================================
+TASK NAME: Titanic Survivors and Non-Survivors
+========================================================================
+
+TASK OVERVIEW:
+Make a report showing the number of survivors and non-survivors by passenger class. Classes are categorized based on the pclass value as:
+
+• First class: pclass = 1
+• Second class: pclass = 2
+• Third class: pclass = 3
+Output the number of survivors and non-survivors by each class.
+
+DATA REQUIREMENTS:
+* Table: titanic
+* Columns:
+  - age (double precision)
+  - cabin (text)
+  - embarked (text)
+  - fare (double precision)
+  - name (text)
+  - parch (bigint)
+  - passengerid (bigint)
+  - pclass (bigint)
+  - sex (text)
+  - sibsp (bigint)
+  - survived (bigint)
+  - ticket (text)
+
+========================================================================
