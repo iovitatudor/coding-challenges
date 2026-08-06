@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Employees With the Same Salary
+========================================================================
+
+TASK OVERVIEW:
+Find employees who earn the same salary.
+
+Output the worker id along with the first name and the salary in descending order.
+
+DATA REQUIREMENTS:
+* Table: worker
+* Columns:
+  - department (text)
+  - first_name (text)
+  - joining_date (date)
+  - last_name (text)
+  - salary (bigint)
+  - worker_id (bigint)
+
+========================================================================
