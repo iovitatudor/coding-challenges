@@ -1,0 +1,26 @@
+========================================================================
+TASK NAME: Second Highest Salary
+========================================================================
+
+TASK OVERVIEW:
+Find the second highest salary of employees.
+
+DATA REQUIREMENTS:
+* Table: employee
+* Columns:
+  - address (text)
+  - age (bigint)
+  - bonus (bigint)
+  - city (text)
+  - department (text)
+  - email (text)
+  - employee_title (text)
+  - first_name (text)
+  - id (bigint)
+  - last_name (text)
+  - manager_id (bigint)
+  - salary (bigint)
+  - sex (text)
+  - target (bigint)
+
+========================================================================
