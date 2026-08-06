@@ -1,0 +1,27 @@
+========================================================================
+TASK NAME: Highest Salary In Department
+========================================================================
+
+TASK OVERVIEW:
+Find the employee with the highest salary per department.
+Output the department name, employee's first name along with the corresponding salary.
+
+DATA REQUIREMENTS:
+* Table: employee
+* Columns:
+  - address (text)
+  - age (bigint)
+  - bonus (bigint)
+  - city (text)
+  - department (text)
+  - email (text)
+  - employee_title (text)
+  - first_name (text)
+  - id (bigint)
+  - last_name (text)
+  - manager_id (bigint)
+  - salary (bigint)
+  - sex (text)
+  - target (bigint)
+
+========================================================================
