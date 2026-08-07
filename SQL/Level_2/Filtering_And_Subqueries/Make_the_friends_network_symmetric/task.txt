@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Make the friends network symmetric
+========================================================================
+
+TASK OVERVIEW:
+Make the friends network symmetric.
+For example, if 0 and 1 are friends, have the output contain both 0 and 1 under 1 and 0 respectively.
+
+DATA REQUIREMENTS:
+* Table: google_friends_network
+* Columns:
+  - friend_id (bigint)
+  - user_id (bigint)
+
+========================================================================
