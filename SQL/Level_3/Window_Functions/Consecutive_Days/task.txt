@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Consecutive Days
+========================================================================
+
+TASK OVERVIEW:
+Find all the users who were active for 3 consecutive days or more.
+
+DATA REQUIREMENTS:
+* Table: sf_events
+* Columns:
+  - account_id (character varying)
+  - record_date (date)
+  - user_id (character varying)
+
+========================================================================
