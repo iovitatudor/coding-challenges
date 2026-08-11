@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Flags per Video
+========================================================================
+
+TASK OVERVIEW:
+For each video, find how many unique users flagged it. A unique user can be identified using the combination of their first name and last name. Do not consider rows in which there is no flag ID.
+
+DATA REQUIREMENTS:
+* Table: user_flags
+* Columns:
+  - flag_id (text)
+  - user_firstname (text)
+  - user_lastname (text)
+  - video_id (text)
+
+========================================================================
