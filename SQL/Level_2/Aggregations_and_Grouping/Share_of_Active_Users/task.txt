@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Share of Active Users
+========================================================================
+
+TASK OVERVIEW:
+Calculate the percentage of users who are both from the US and have an 'open' status, as indicated in the fb_active_users table.
+
+DATA REQUIREMENTS:
+* Table: fb_active_users
+* Columns:
+  - country (text)
+  - name (text)
+  - status (text)
+  - user_id (bigint)
+
+========================================================================
