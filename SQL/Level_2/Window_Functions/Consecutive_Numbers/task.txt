@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Consecutive Numbers
+========================================================================
+
+TASK OVERVIEW:
+Find all numbers that appear at least three times consecutively.
+Return the result table in any order.
+
+DATA REQUIREMENTS:
+* Table: Logs
+* Columns:
+  - id (int)
+  - num (varchar)
+
+========================================================================
