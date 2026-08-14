@@ -1,0 +1,14 @@
+========================================================================
+TASK NAME: Nth Highest Salary
+========================================================================
+
+TASK OVERVIEW:
+Write a solution to find the nth highest distinct salary from the Employee table. If there are less than n distinct salaries, return null.
+
+DATA REQUIREMENTS:
+* Table: Employee
+* Columns:
+  - id (int)
+  - salary (int)
+
+========================================================================
