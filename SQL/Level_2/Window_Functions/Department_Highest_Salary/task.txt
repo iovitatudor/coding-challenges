@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: Department Highest Salary
+========================================================================
+
+TASK OVERVIEW:
+Write a solution to find employees who have the highest salary in each of the departments. Return the result table in any order.
+
+DATA REQUIREMENTS:
+* Table: Employee
+* Columns:
+  - id (int)
+  - name (varchar)
+  - salary (int)
+  - departmentId (int)
+
+* Table: Department
+* Columns:
+  - id (int)
+  - name (varchar)
+
+========================================================================
