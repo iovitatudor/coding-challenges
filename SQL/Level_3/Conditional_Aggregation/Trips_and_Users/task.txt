@@ -1,0 +1,24 @@
+========================================================================
+TASK NAME: Trips and Users
+========================================================================
+
+TASK OVERVIEW:
+Write a solution to find the cancellation rate of requests with unbanned users (both client and driver must not be banned) each day between "2013-10-01" and "2013-10-03" with at least one trip. Round Cancellation Rate to two decimal points.
+
+DATA REQUIREMENTS:
+* Table: Trips
+* Columns:
+  - id (int)
+  - client_id (int)
+  - driver_id (int)
+  - city_id (int)
+  - status (enum)
+  - request_at (varchar)
+
+* Table: Users
+* Columns:
+  - users_id (int)
+  - banned (enum)
+  - role (enum)
+
+========================================================================
