@@ -1,0 +1,29 @@
+========================================================================
+TASK NAME: Rate Limiter Window Check
+========================================================================
+
+TASK OVERVIEW:
+Write a PHP function `isRateLimited(array $requests, string $clientIp, int $limit, int $windowSeconds, int $now): bool`
+that determines if an incoming API request exceeds the allowed limit for an IP address within a sliding time window.
+
+Requirements:
+1. Filter `$requests` to evaluate timestamps belonging only to `$clientIp`.
+2. Count how many requests fell within the time window: `($now - $windowSeconds)` to `$now` (inclusive).
+3. Return `true` if the count is greater than or equal to `$limit`, otherwise `false`.
+
+INPUT DATA:
+$requests = [
+    ['ip' => '192.168.1.1', 'timestamp' => 1700000000],
+    ['ip' => '192.168.1.1', 'timestamp' => 1700000020],
+    ['ip' => '192.168.1.1', 'timestamp' => 1700000050],
+    ['ip' => '10.0.0.1',    'timestamp' => 1700000055],
+];
+
+$limit = 3;
+$windowSeconds = 60;
+$now = 1700000058;
+
+EXPECTED OUTPUT:
+isRateLimited($requests, '192.168.1.1', $limit, $windowSeconds, $now); // true
+isRateLimited($requests, '10.0.0.1',    $limit, $windowSeconds, $now); // false
+========================================================================
