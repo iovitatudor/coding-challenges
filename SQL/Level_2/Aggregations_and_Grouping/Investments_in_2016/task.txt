@@ -1,0 +1,17 @@
+TASK OVERVIEW:
+Write a solution to report the sum of all total investment values in 2016 (tiv_2016), for all policyholders who:
+1. Have the same tiv_2015 value as one or more other policyholders, and
+2. Are not located in the same city as any other policyholder (the (lat, lon) attribute pairs must be unique).
+
+Round tiv_2016 to two decimal places.
+
+DATA REQUIREMENTS:
+* Table: Insurance
+* Columns:
+  - pid (int)
+  - tiv_2015 (float)
+  - tiv_2016 (float)
+  - lat (float)
+  - lon (float)
+
+========================================================================
