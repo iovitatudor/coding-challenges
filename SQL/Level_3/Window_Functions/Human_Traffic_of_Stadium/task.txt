@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Human Traffic of Stadium
+========================================================================
+
+TASK OVERVIEW:
+Write a solution to display the records with three or more rows with consecutive id's, and the number of people is greater than or equal to 100 for each.
+Return the result table ordered by visit_date in ascending order.
+
+DATA REQUIREMENTS:
+* Table: Stadium
+* Columns:
+  - id (int)
+  - visit_date (date)
+  - people (int)
+
+========================================================================
