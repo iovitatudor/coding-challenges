@@ -11,5 +11,5 @@ FROM FIlTRED
 WHERE grp IN (SELECT grp
               FROM FIlTRED
               GROUP BY grp
-              HAVING COUNT(*) > 3)
+              HAVING COUNT(*) >= 3)
 ORDER BY visit_date ASC;
