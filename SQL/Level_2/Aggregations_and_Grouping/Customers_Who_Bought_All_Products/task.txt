@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Customers Who Bought All Products
+========================================================================
+
+TASK OVERVIEW:
+Write a solution to report the customer ids from the Customer table that bought all the products in the Product table.
+Return the result table in any order.
+
+DATA REQUIREMENTS:
+* Table: Customer
+  - customer_id (int)
+  - product_key (int)
+* Table: Product
+  - product_key (int)
+
+========================================================================
