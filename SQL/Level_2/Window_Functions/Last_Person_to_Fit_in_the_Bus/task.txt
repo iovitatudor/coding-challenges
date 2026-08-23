@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Last Person to Fit in the Bus
+========================================================================
+
+TASK OVERVIEW:
+Find the person_name of the last person that can fit on the bus without
+exceeding the 1000kg weight limit based on turn order.
+
+DATA REQUIREMENTS:
+* Table: Queue
+  - person_id (int)
+  - person_name (varchar)
+  - weight (int)
+  - turn (int)
+
+========================================================================
