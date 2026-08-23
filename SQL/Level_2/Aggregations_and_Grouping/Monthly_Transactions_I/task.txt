@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Monthly Transactions I
+========================================================================
+
+TASK OVERVIEW:
+Write an SQL query to find for each month and country:
+- total number of transactions and their total amount
+- total number of approved transactions and their total amount
+
+DATA REQUIREMENTS:
+* Table: Transactions
+  - id (int)
+  - country (varchar)
+  - state (enum: 'approved', 'declined')
+  - amount (int)
+  - trans_date (date)
+
+========================================================================
