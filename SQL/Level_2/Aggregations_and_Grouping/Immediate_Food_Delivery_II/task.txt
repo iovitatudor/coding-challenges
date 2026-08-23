@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Immediate Food Delivery II
+========================================================================
+
+TASK OVERVIEW:
+Find the percentage of immediate orders in the first orders of all customers,
+rounded to 2 decimal places.
+
+DATA REQUIREMENTS:
+* Table: Delivery
+  - delivery_id (int)
+  - customer_id (int)
+  - order_date (date)
+  - customer_pref_delivery_date (date)
+
+========================================================================
