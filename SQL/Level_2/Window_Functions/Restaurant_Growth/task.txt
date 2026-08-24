@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: Restaurant Growth
+========================================================================
+
+TASK OVERVIEW:
+Compute the moving average of how much customers paid in a 7-day window
+(current day + 6 days before), starting from the first date with 7 full days of data.
+Round average_amount to 2 decimal places.
+
+DATA REQUIREMENTS:
+* Table: Customer
+  - customer_id (int)
+  - name (varchar)
+  - visited_on (date)
+  - amount (int)
+
+========================================================================
