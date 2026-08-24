@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: List the Products Ordered in a Period
+========================================================================
+
+TASK OVERVIEW:
+Get the names of products that have at least 100 units ordered in February 2020
+and their total amount.
+
+DATA REQUIREMENTS:
+* Table: Products
+  - product_id (int)
+  - product_name (varchar)
+  - product_category (varchar)
+* Table: Orders
+  - product_id (int)
+  - order_date (date)
+  - unit (int)
+
+========================================================================
