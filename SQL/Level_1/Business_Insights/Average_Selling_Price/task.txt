@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Average Selling Price
+========================================================================
+
+TASK OVERVIEW:
+Find the average selling price for each product rounded to 2 decimal places.
+If a product does not have any sold units, its average selling price is 0.
+
+DATA REQUIREMENTS:
+* Table: Prices
+  - product_id (int)
+  - start_date (date)
+  - end_date (date)
+  - price (int)
+* Table: UnitsSold
+  - product_id (int)
+  - purchase_date (date)
+  - units (int)
+
+========================================================================
