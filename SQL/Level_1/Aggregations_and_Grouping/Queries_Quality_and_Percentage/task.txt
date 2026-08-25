@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: Queries Quality and Percentage
+========================================================================
+
+TASK OVERVIEW:
+Find for each query_name:
+- quality: average ratio of rating to position (rounded to 2 decimals)
+- poor_query_percentage: percentage of queries with rating < 3 (rounded to 2 decimals)
+
+DATA REQUIREMENTS:
+* Table: Queries
+  - query_name (varchar)
+  - result (varchar)
+  - position (int)
+  - rating (int)
+
+========================================================================
