@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: User Activity for the Past 30 Days I
+========================================================================
+
+TASK OVERVIEW:
+Find the daily active user count for a period of 30 days ending 2019-07-27 inclusively.
+A user is considered active on a day if they made at least one activity.
+
+DATA REQUIREMENTS:
+* Table: Activity
+  - user_id (int)
+  - session_id (int)
+  - activity_date (date)
+  - activity_type (enum: 'open_session', 'end_session', 'scroll_down', 'send_message')
+
+========================================================================
