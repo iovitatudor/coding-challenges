@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Reformat Department Table
+========================================================================
+
+TASK OVERVIEW:
+Reformat the Department table such that there is a department id column
+and a revenue column for each month (Jan to Dec).
+
+DATA REQUIREMENTS:
+* Table: Department
+  - id (int)
+  - revenue (int)
+  - month (varchar: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])
+
+========================================================================
