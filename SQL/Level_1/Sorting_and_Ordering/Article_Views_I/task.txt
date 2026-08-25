@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Article Views I
+========================================================================
+
+TASK OVERVIEW:
+Find all authors that viewed at least one of their own articles.
+Return the result table sorted by id in ascending order.
+
+DATA REQUIREMENTS:
+* Table: Views
+  - article_id (int)
+  - author_id (int)
+  - viewer_id (int)
+  - view_date (date)
+
+========================================================================
