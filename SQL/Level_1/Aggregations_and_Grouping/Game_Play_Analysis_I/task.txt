@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Game Play Analysis I
+========================================================================
+
+TASK OVERVIEW:
+Find the first login date for each player.
+
+DATA REQUIREMENTS:
+* Table: Activity
+  - player_id (int)
+  - device_id (int)
+  - event_date (date)
+  - games_played (int)
+
+========================================================================
