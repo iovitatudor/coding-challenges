@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Employees Earning More Than Their Managers
+========================================================================
+
+TASK OVERVIEW:
+Find all employees who earn more than their direct managers.
+
+DATA REQUIREMENTS:
+* Table: Employee
+  - id (int)
+  - name (varchar)
+  - salary (int)
+  - managerId (int)
+
+========================================================================
