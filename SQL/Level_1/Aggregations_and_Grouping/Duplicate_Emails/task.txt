@@ -1,0 +1,13 @@
+========================================================================
+TASK NAME: Duplicate Emails
+========================================================================
+
+TASK OVERVIEW:
+Report all duplicate emails from the Person table.
+
+DATA REQUIREMENTS:
+* Table: Person
+  - id (int)
+  - email (varchar)
+
+========================================================================
