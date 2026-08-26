@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Customers Who Never Order
+========================================================================
+
+TASK OVERVIEW:
+Find all customers who never ordered anything.
+
+DATA REQUIREMENTS:
+* Table: Customers
+  - id (int)
+  - name (varchar)
+* Table: Orders
+  - id (int)
+  - customerId (int)
+
+========================================================================
