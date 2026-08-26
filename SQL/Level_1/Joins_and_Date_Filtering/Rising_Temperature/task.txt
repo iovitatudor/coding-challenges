@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Rising Temperature
+========================================================================
+
+TASK OVERVIEW:
+Find all dates' id with higher temperatures compared to their previous
+calendar dates (yesterday).
+
+DATA REQUIREMENTS:
+* Table: Weather
+  - id (int)
+  - recordDate (date)
+  - temperature (int)
+
+========================================================================
