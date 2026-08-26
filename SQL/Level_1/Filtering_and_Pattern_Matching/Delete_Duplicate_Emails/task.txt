@@ -1,0 +1,14 @@
+========================================================================
+TASK NAME: Delete Duplicate Emails
+========================================================================
+
+TASK OVERVIEW:
+Delete all duplicate emails, keeping only one unique email with the smallest id.
+Must write a DELETE statement (modifying the Person table in place).
+
+DATA REQUIREMENTS:
+* Table: Person
+  - id (int)
+  - email (varchar)
+
+========================================================================
