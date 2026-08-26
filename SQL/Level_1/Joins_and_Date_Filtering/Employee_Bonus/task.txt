@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Employee Bonus
+========================================================================
+
+TASK OVERVIEW:
+Report the name and bonus amount of each employee who has a bonus
+less than 1000 or did not receive any bonus.
+
+DATA REQUIREMENTS:
+* Table: Employee
+  - empId (int)
+  - name (varchar)
+  - supervisor (int)
+  - salary (int)
+* Table: Bonus
+  - empId (int)
+  - bonus (int)
+
+========================================================================
