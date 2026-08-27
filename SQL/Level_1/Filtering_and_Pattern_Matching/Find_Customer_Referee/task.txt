@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Find Customer Referee
+========================================================================
+
+TASK OVERVIEW:
+Find the names of customers that are not referred by the customer with id = 2
+(either referred by someone else or not referred at all).
+
+DATA REQUIREMENTS:
+* Table: Customer
+  - id (int)
+  - name (varchar)
+  - referee_id (int)
+
+========================================================================
