@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Big Countries
+========================================================================
+
+TASK OVERVIEW:
+Find the name, population, and area of the big countries.
+A country is big if it has an area of at least 3,000,000 sq km or
+a population of at least 25,000,000.
+
+DATA REQUIREMENTS:
+* Table: World
+  - name (varchar)
+  - continent (varchar)
+  - area (int)
+  - population (int)
+  - gdp (bigint)
+
+========================================================================
