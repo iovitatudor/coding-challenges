@@ -1,0 +1,14 @@
+========================================================================
+TASK NAME: Customer Placing the Largest Number of Orders
+========================================================================
+
+TASK OVERVIEW:
+Find the customer_number for the customer who has placed the largest
+number of orders.
+
+DATA REQUIREMENTS:
+* Table: Orders
+  - order_number (int)
+  - customer_number (int)
+
+========================================================================
