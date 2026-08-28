@@ -1,0 +1,27 @@
+========================================================================
+TASK NAME: Sales Person
+========================================================================
+
+TASK OVERVIEW:
+Find the names of all the salespersons who did not have any orders
+related to the company with the name "RED".
+
+DATA REQUIREMENTS:
+* Table: SalesPerson
+  - sales_id (int)
+  - name (varchar)
+  - salary (int)
+  - commission_rate (int)
+  - hire_date (date)
+* Table: Company
+  - com_id (int)
+  - name (varchar)
+  - city (varchar)
+* Table: Orders
+  - order_id (int)
+  - order_date (date)
+  - com_id (int)
+  - sales_id (int)
+  - amount (int)
+
+========================================================================
