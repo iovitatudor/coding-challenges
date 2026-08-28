@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Triangle Judgement
+========================================================================
+
+TASK OVERVIEW:
+Report for every three line segments (x, y, z) whether they can
+form a triangle ('Yes' or 'No').
+
+DATA REQUIREMENTS:
+* Table: Triangle
+  - x (int)
+  - y (int)
+  - z (int)
+
+========================================================================
