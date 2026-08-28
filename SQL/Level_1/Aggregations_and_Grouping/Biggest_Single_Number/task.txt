@@ -1,0 +1,13 @@
+========================================================================
+TASK NAME: Biggest Single Number
+========================================================================
+
+TASK OVERVIEW:
+Find the largest number that appears only once in the MyNumbers table.
+If no such number exists, report null.
+
+DATA REQUIREMENTS:
+* Table: MyNumbers
+  - num (int)
+
+========================================================================
