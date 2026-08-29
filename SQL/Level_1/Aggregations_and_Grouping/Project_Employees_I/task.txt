@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Project Employees I
+========================================================================
+
+TASK OVERVIEW:
+Report the average experience years of all the employees for each project,
+rounded to 2 digits.
+
+DATA REQUIREMENTS:
+* Table: Project
+  - project_id (int)
+  - employee_id (int)
+* Table: Employee
+  - employee_id (int)
+  - name (varchar)
+  - experience_years (int)
+
+========================================================================
