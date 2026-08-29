@@ -3,6 +3,6 @@ SELECT id,
        description,
        rating
 FROM Cinema
-WHERE description NOT ILIKE '%boring%'
-    AND id % 2 = 1
+WHERE description != 'boring'
+    AND id % 2 != 0
 ORDER BY rating DESC;
