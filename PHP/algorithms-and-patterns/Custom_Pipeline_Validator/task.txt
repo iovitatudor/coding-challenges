@@ -1,0 +1,30 @@
+========================================================================
+TASK NAME: Custom Pipeline Validator
+========================================================================
+
+TASK OVERVIEW:
+Write a PHP function `validateData(array $data, array $rules): array`
+that applies an array of callable rules to each item in `$data`.
+
+Requirements:
+1. `$rules` is an array of callables (anonymous functions, arrow functions, or string function names).
+2. Each rule takes an item and returns `bool` (`true` if valid, `false` if invalid).
+3. Return only the items from `$data` that pass ALL rules in the pipeline.
+
+INPUT DATA:
+$data = [
+    ['name' => 'Alice', 'age' => 25, 'role' => 'admin'],
+    ['name' => 'Bob',   'age' => 17, 'role' => 'user'],
+    ['name' => 'Charlie', 'age' => 30, 'role' => 'user'],
+    ['name' => '',      'age' => 22, 'role' => 'admin'],
+];
+
+$rules = [
+    fn(array $item): bool => !empty($item['name']),
+    fn(array $item): bool => $item['age'] >= 18,
+];
+
+EXPECTED OUTPUT:
+validateData($data, $rules);
+// Returns Alice and Charlie items only
+========================================================================
