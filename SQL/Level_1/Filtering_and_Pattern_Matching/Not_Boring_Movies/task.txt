@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Not Boring Movies
+========================================================================
+
+TASK OVERVIEW:
+Report movies with an odd-numbered ID and a description that is not "boring".
+Return the result table ordered by rating in descending order.
+
+DATA REQUIREMENTS:
+* Table: Cinema
+  - id (int)
+  - movie (varchar)
+  - description (varchar)
+  - rating (float)
+
+========================================================================
