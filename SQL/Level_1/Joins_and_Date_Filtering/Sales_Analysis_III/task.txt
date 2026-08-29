@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Sales Analysis III
+========================================================================
+
+TASK OVERVIEW:
+Report the products that were ONLY sold in the first quarter of 2019
+(between 2019-01-01 and 2019-03-31 inclusive).
+
+DATA REQUIREMENTS:
+* Table: Product
+  - product_id (int)
+  - product_name (varchar)
+  - unit_price (int)
+* Table: Sales
+  - seller_id (int)
+  - product_id (int)
+  - buyer_id (int)
+  - sale_date (date)
+  - quantity (int)
+  - price (int)
