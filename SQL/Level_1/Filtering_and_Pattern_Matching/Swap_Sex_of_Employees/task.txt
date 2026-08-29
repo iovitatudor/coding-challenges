@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Swap Sex of Employees
+========================================================================
+
+TASK OVERVIEW:
+Swap all 'f' and 'm' values in the Salary table using a single UPDATE
+statement and no temporary tables.
+
+DATA REQUIREMENTS:
+* Table: Salary
+  - id (int)
+  - name (varchar)
+  - sex (ENUM)
+  - salary (int)
+
+========================================================================
