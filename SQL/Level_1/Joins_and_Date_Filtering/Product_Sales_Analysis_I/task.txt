@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Product Sales Analysis I
+========================================================================
+
+TASK OVERVIEW:
+Report the product_name, year, and price for each sale_id in the
+Sales table.
+
+DATA REQUIREMENTS:
+* Table: Sales
+  - sale_id (int)
+  - product_id (int)
+  - year (int)
+  - quantity (int)
+  - price (int)
+* Table: Product
+  - product_id (int)
+  - product_name (varchar)
+
+========================================================================
