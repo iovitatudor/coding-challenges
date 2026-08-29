@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Actors and Directors Who Cooperated At Least Three Times
+========================================================================
+
+TASK OVERVIEW:
+Find all the pairs (actor_id, director_id) where the actor has
+cooperated with the director at least three times.
+
+DATA REQUIREMENTS:
+* Table: ActorDirector
+  - actor_id (int)
+  - director_id (int)
+  - timestamp (int)
+
+========================================================================
