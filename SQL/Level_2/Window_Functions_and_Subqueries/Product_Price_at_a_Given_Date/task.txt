@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Product Price at a Given Date
+========================================================================
+
+TASK OVERVIEW:
+Find the prices of all products on the date 2019-08-16.
+Initially, all products have a price of 10.
+
+DATA REQUIREMENTS:
+* Table: Products
+  - product_id (int)
+  - new_price (int)
+  - change_date (date)
+
+========================================================================
