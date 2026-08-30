@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Students and Examinations
+========================================================================
+
+TASK OVERVIEW:
+Find the number of times each student attended each exam.
+Return the result table ordered by student_id and subject_name.
+
+DATA REQUIREMENTS:
+* Table: Students
+  - student_id (int)
+  - student_name (varchar)
+* Table: Subjects
+  - subject_name (varchar)
+* Table: Examinations
+  - student_id (int)
+  - subject_name (varchar)
+
+========================================================================
