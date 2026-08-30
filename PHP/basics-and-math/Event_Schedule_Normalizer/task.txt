@@ -1,0 +1,23 @@
+========================================================================
+TASK NAME: Event Schedule Normalizer
+========================================================================
+
+TASK OVERVIEW:
+Write a PHP function `normalizeToUtc(string $localTimeStr, string $sourceTimeZone): string`
+that takes a local date-time string and its source time zone, and converts it to a standard UTC ISO 8601 string (`YYYY-MM-DDTHH:MM:SSZ`).
+
+Requirements:
+1. Parse `$localTimeStr` using `DateTimeImmutable` with `$sourceTimeZone`.
+2. Convert the object's time zone to `'UTC'`.
+3. Return the formatted date string in ISO 8601 format ending with `Z` (e.g. `'2026-08-30T15:30:00Z'`).
+4. Throw an `InvalidArgumentException` if `$sourceTimeZone` is an invalid time zone string.
+
+INPUT DATA:
+$time = "2026-08-30 18:30:00";
+$tz1  = "Europe/Chisinau"; // UTC+3 during DST
+$tz2  = "America/New_York"; // UTC-4 during DST
+
+EXPECTED OUTPUT:
+normalizeToUtc($time, $tz1); // "2026-08-30T15:30:00Z"
+normalizeToUtc($time, $tz2); // "2026-08-30T22:30:00Z"
+========================================================================
