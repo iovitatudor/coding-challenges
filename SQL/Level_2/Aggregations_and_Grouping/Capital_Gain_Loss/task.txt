@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Capital Gain/Loss
+========================================================================
+
+TASK OVERVIEW:
+Report the total Capital gain/loss for each stock after buying and
+selling the stock one or many times.
+
+DATA REQUIREMENTS:
+* Table: Stocks
+  - stock_name (varchar)
+  - operation (enum: 'Buy', 'Sell')
+  - operation_day (int)
+  - price (int)
+
+========================================================================
