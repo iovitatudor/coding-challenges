@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: Replace Employee ID With The Unique Identifier
+========================================================================
+
+TASK OVERVIEW:
+Show the unique ID of each user in the Employees table. If a user does
+not have a unique ID in EmployeeUNI, show null.
+
+DATA REQUIREMENTS:
+* Table: Employees
+  - id (int)
+  - name (varchar)
+* Table: EmployeeUNI
+  - id (int)
+  - unique_id (int)
+
+========================================================================
