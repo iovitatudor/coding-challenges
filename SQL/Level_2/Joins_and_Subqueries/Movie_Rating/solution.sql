@@ -1,0 +1,17 @@
+(SELECT u.name AS results
+ FROM Users AS u
+          JOIN MovieRating AS mr
+               ON u.user_id = mr.user_id
+ GROUP BY u.name
+ ORDER BY COUNT(movie_id) DESC, u.name ASC LIMIT 1)
+
+UNION ALL
+
+(SELECT m.title AS results
+ FROM Movies AS m
+          JOIN MovieRating AS mr
+               ON m.movie_id = mr.movie_id
+ WHERE mr.created_at >= '2020-02-01'
+   AND mr.created_at < '2020-03-01'
+ GROUP BY m.title
+ ORDER BY AVG(mr.rating) DESC, m.title ASC LIMIT 1);
