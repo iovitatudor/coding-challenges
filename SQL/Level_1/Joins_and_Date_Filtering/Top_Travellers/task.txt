@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Top Travellers
+========================================================================
+
+TASK OVERVIEW:
+Report the distance traveled by each user.
+Return the result table ordered by travelled_distance in descending order;
+if two or more users traveled the same distance, order them by name in
+ascending order. Users with no rides should report 0.
+
+DATA REQUIREMENTS:
+* Table: Users
+  - id (int)
+  - name (varchar)
+* Table: Rides
+  - id (int)
+  - user_id (int)
+  - distance (int)
+
+========================================================================
