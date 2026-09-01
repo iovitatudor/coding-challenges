@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Resilient Service Fallback
+========================================================================
+
+TASK OVERVIEW:
+Write a PHP function `withRetry(callable $operation, int $maxRetries): mixed`
+that attempts to execute a task and retries upon failure.
+
+Requirements:
+1. Attempt to execute `$operation()`.
+2. If any `Throwable` (Exception or Error) is thrown, catch it and retry up to `$maxRetries` times.
+3. If an attempt succeeds, return the result immediately.
+4. If all `$maxRetries` attempts fail, throw a `RuntimeException` with the message:
+   `"Operation failed after X retries"` (where X is `$maxRetries`) and chain the last caught `Throwable` as the `$previous` exception parameter.
+
+========================================================================
