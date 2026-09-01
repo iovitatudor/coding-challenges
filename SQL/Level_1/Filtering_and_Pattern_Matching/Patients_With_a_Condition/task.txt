@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: Patients With a Condition
+========================================================================
+
+TASK OVERVIEW:
+Find the patient_id, patient_name, and conditions of the patients who
+have Type I Diabetes. Type I Diabetes always starts with a DIAB1 prefix
+as a standalone condition code (at the start of the string or preceded by
+a space).
+
+DATA REQUIREMENTS:
+* Table: Patients
+  - patient_id (int)
+  - patient_name (varchar)
+  - conditions (varchar)
+
+========================================================================
