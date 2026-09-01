@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Group Sold Products By The Date
+========================================================================
+
+TASK OVERVIEW:
+Find for each date the number of different products sold and their names.
+The sold products names for each date should be sorted lexicographically
+and comma-separated. Return the result table ordered by sell_date.
+
+DATA REQUIREMENTS:
+* Table: Activities
+  - sell_date (date)
+  - product (varchar)
+
+========================================================================
