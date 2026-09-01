@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Bank Account Summary II
+========================================================================
+
+TASK OVERVIEW:
+Report the name and balance of users with a total balance higher than 10000.
+The balance of an account is equal to the sum of the amounts of all transactions
+involving that account.
+
+DATA REQUIREMENTS:
+* Table: Users
+  - account (int)
+  - name (varchar)
+* Table: Transactions
+  - trans_id (int)
+  - account (int)
+  - amount (int)
+  - transacted_on (date)
+
+========================================================================
