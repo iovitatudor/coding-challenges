@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Find Users With Valid E-Mails
+========================================================================
+
+TASK OVERVIEW:
+Find all users who have valid emails.
+A valid email must:
+1. Start with a letter (upper or lowercase).
+2. Contain only letters, digits, '_', '.', or '-' in the prefix.
+3. End with the exact lowercase domain '@leetcode.com'.
+
+DATA REQUIREMENTS:
+* Table: Users
+  - user_id (int)
+  - name (varchar)
+  - mail (varchar)
+
+========================================================================
