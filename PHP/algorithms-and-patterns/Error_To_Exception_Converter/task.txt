@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Error to Exception Converter
+========================================================================
+
+TASK OVERVIEW:
+Write a PHP function `runWithStrictErrors(callable $callback): mixed`
+that executes a callback while converting all standard PHP warnings, notices,
+and errors into an `ErrorException`.
+
+Requirements:
+1. Register a temporary custom error handler using `set_error_handler`.
+2. Inside the custom error handler, throw an `ErrorException` containing
+   the error message, code/severity, filename, and line number.
+3. Execute `$callback()`.
+4. Restore the previous error handler using `restore_error_handler()`
+   in a `finally` block so global state isn't permanently modified even if an
+   exception occurs.
+5. Return the result of `$callback()`.
+
+========================================================================
