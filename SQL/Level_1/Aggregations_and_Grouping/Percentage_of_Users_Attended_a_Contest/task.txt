@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Percentage of Users Attended a Contest
+========================================================================
+
+TASK OVERVIEW:
+Find the percentage of the users registered in each contest rounded to two
+decimals. Return the result table ordered by percentage in descending order;
+in case of a tie, order by contest_id in ascending order.
+
+DATA REQUIREMENTS:
+* Table: Users
+  - user_id (int)
+  - user_name (varchar)
+* Table: Register
+  - contest_id (int)
+  - user_id (int)
+
+========================================================================
