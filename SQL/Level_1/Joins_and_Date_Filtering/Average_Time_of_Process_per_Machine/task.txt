@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: Average Time of Process per Machine
+========================================================================
+
+TASK OVERVIEW:
+Find the average processing time each machine takes to complete a process.
+The time for a single process is (end timestamp - start timestamp).
+Return the result table with machine_id and processing_time rounded to 3 decimal places.
+
+DATA REQUIREMENTS:
+* Table: Activity
+  - machine_id (int)
+  - process_id (int)
+  - activity_type (enum: 'start', 'end')
+  - timestamp (float)
+
+========================================================================
