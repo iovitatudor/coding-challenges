@@ -1,0 +1,54 @@
+========================================================================
+TASK NAME: Aggregated Service Exception Collector
+========================================================================
+
+TASK OVERVIEW:
+Write a PHP function `executeParallelTasks(array $tasks): array` that
+executes a batch of callable tasks and collects both successful results
+and thrown errors without halting execution on individual task failures.
+
+Requirements:
+1. Iterate over an array of named task callables `$tasks` (`['task_name' => callable]`).
+2. Execute each task within a `try-catch` block capturing any `Throwable`.
+3. If execution fails, capture the caught `Throwable` and log it under the task's key.
+4. If one or more tasks fail, throw a custom `AggregateException` containing:
+   - Message: `"Batch execution completed with X error(s)"` (where X is error count).
+   - A method `getErrors(): array` that returns the associative array of captured `Throwable` instances (`['task_name' => Throwable]`).
+   - A method `getResults(): array` that returns the successfully calculated outputs (`['task_name' => mixed]`).
+5. If all tasks succeed, return the associative array of successful results directly without throwing.
+
+INPUT DATA:
+class AggregateException extends Exception
+{
+    public function __construct(
+        string $message,
+        private array $results,
+        private array $errors
+    ) {
+        parent::__construct($message);
+    }
+
+    public function getResults(): array { return $this->results; }
+    public function getErrors(): array { return $this->errors; }
+}
+
+$tasks = [
+    'fetch_user'  => fn() => ['id' => 42, 'name' => 'Alice'],
+    'fetch_stats' => function() { throw new RuntimeException("Stats service offline"); },
+    'fetch_logs'  => function() { throw new Exception("Log storage unreachable"); },
+];
+
+EXPECTED OUTPUT:
+try {
+    $results = executeParallelTasks($tasks);
+} catch (AggregateException $e) {
+    echo $e->getMessage();
+    // "Batch execution completed with 2 error(s)"
+
+    print_r(array_keys($e->getResults()));
+    // ['fetch_user']
+
+    print_r(array_keys($e->getErrors()));
+    // ['fetch_stats', 'fetch_logs']
+}
+========================================================================
