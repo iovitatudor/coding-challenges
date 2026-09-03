@@ -1,0 +1,14 @@
+========================================================================
+TASK NAME: Invalid Tweets
+========================================================================
+
+TASK OVERVIEW:
+Find the IDs of invalid tweets. A tweet is invalid if the total length of
+its content (including spaces and punctuation) is strictly greater than 15 characters.
+
+DATA REQUIREMENTS:
+* Table: Tweets
+  - tweet_id (int)
+  - content (varchar)
+
+========================================================================
