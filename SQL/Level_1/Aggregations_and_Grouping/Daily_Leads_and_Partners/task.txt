@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Daily Leads and Partners
+========================================================================
+
+TASK OVERVIEW:
+For each date_id and make_name, find the number of distinct lead_id's
+and distinct partner_id's.
+
+DATA REQUIREMENTS:
+* Table: DailySales
+  - date_id (date)
+  - make_name (varchar)
+  - lead_id (int)
+  - partner_id (int)
+
+========================================================================
