@@ -1,0 +1,14 @@
+========================================================================
+TASK NAME: Fix Names in a Table
+========================================================================
+
+TASK OVERVIEW:
+Fix the names so that only the first character is uppercase and the rest
+are lowercase. Return the result table ordered by user_id.
+
+DATA REQUIREMENTS:
+* Table: Users
+  - user_id (int)
+  - name (varchar)
+
+========================================================================
