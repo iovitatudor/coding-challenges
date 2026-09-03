@@ -1,0 +1,14 @@
+========================================================================
+TASK NAME: Find Followers Count
+========================================================================
+
+TASK OVERVIEW:
+For each user, return the number of followers. Return the result table
+ordered by user_id in ascending order.
+
+DATA REQUIREMENTS:
+* Table: Followers
+  - user_id (int)
+  - follower_id (int)
+
+========================================================================
