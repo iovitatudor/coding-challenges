@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: The Number of Employees Which Report to Each Employee
+========================================================================
+
+TASK OVERVIEW:
+Report the ids and names of all managers (employees who have at least 1 report),
+the number of employees who report directly to them, and the average age of
+their direct reports rounded to the nearest integer. Order by employee_id.
+
+DATA REQUIREMENTS:
+* Table: Employees
+  - employee_id (int)
+  - name (varchar)
+  - reports_to (int)
+  - age (int)
+
+========================================================================
