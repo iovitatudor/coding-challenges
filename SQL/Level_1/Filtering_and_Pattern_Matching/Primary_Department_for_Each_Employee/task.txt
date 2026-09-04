@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Primary Department for Each Employee
+========================================================================
+
+TASK OVERVIEW:
+Report all employees with their primary department. For employees who belong
+to only one department (where primary_flag is 'N'), report their only department.
+For employees belonging to multiple departments, report the one where primary_flag is 'Y'.
+
+DATA REQUIREMENTS:
+* Table: Employee
+  - employee_id (int)
+  - department_id (int)
+  - primary_flag (enum: 'Y', 'N')
+
+========================================================================
