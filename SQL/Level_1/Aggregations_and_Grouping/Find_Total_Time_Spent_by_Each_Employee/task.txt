@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Find Total Time Spent by Each Employee
+========================================================================
+
+TASK OVERVIEW:
+Calculate the total time in minutes spent by each employee on each day at
+the office. The time spent for a single entry is (out_time - in_time).
+
+DATA REQUIREMENTS:
+* Table: Employees
+  - emp_id (int)
+  - event_day (date)
+  - in_time (int)
+  - out_time (int)
+
+========================================================================
