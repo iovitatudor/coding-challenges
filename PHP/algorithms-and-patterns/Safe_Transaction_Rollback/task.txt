@@ -1,0 +1,24 @@
+========================================================================
+TASK NAME: Safe Transaction Rollback
+========================================================================
+
+TASK OVERVIEW:
+Write a PHP function `safeTransaction(array $steps): array` that executes
+an ordered pipeline of transactional steps, merging state into a shared
+context array and rolling back executed steps in reverse order upon failure.
+
+Requirements:
+1. Initialize an empty `$context = []` array and an `$executedSteps = []` tracking list.
+2. Iterate through `$steps` (where each step is an associative array containing `'name'`, `'run'`, and optional `'rollback'`).
+3. Execute `$step['run']($context)`. Merge any returned associative array into `$context`.
+4. If a step throws any `Throwable`:
+   - Immediately stop forward execution.
+   - Iterate backward through `$executedSteps` in reverse order.
+   - If an executed step contains a `'rollback'` key, call `$executedStep['rollback']($context)`.
+   - Re-throw a custom `TransactionFailedException` containing:
+     - Message: `"Transaction failed at step 'X': [original exception message]"`
+     - The accumulated `$context` state at the time of failure.
+     - The original caught `Throwable` passed as the `$previous` exception parameter.
+5. If all steps complete successfully, return the final accumulated `$context`.
+
+========================================================================
