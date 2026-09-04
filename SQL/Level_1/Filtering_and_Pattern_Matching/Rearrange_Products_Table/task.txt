@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: Rearrange Products Table
+========================================================================
+
+TASK OVERVIEW:
+Rearrange (unpivot) the Products table so that each row has (product_id, store, price).
+If a product is not available in a store (price is NULL), do not include
+that row in the result table.
+
+DATA REQUIREMENTS:
+* Table: Products
+  - product_id (int)
+  - store1 (int)
+  - store2 (int)
+  - store3 (int)
+
+========================================================================
