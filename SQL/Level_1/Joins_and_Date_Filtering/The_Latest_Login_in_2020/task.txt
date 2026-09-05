@@ -1,0 +1,14 @@
+========================================================================
+TASK NAME: The Latest Login in 2020
+========================================================================
+
+TASK OVERVIEW:
+Report the latest login timestamp for all users in the year 2020.
+Do not include users who did not log in during 2020.
+
+DATA REQUIREMENTS:
+* Table: Logins
+  - user_id (int)
+  - time_stamp (datetime)
+
+========================================================================
