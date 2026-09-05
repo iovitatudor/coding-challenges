@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Calculate Special Bonus
+========================================================================
+
+TASK OVERVIEW:
+Calculate the bonus of each employee. The bonus is 100% of their salary if
+their employee_id is an odd number AND their name does not start with 'M'.
+Otherwise, the bonus is 0. Return the result table ordered by employee_id.
+
+DATA REQUIREMENTS:
+* Table: Employees
+  - employee_id (int)
+  - name (varchar)
+  - salary (int)
+
+========================================================================
