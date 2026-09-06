@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Employees With Missing Information
+========================================================================
+
+TASK OVERVIEW:
+Report the IDs of all employees with missing information (either name or
+salary is missing across the Employees and Salaries tables).
+Return the result ordered by employee_id in ascending order.
+
+DATA REQUIREMENTS:
+* Table: Employees
+  - employee_id (int)
+  - name (varchar)
+* Table: Salaries
+  - employee_id (int)
+  - salary (int)
+
+========================================================================
