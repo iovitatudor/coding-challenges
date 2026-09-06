@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Count Salary Categories
+========================================================================
+
+TASK OVERVIEW:
+Calculate the number of bank accounts for each salary category:
+* "Low Salary": income < 20000
+* "Average Salary": 20000 <= income <= 50000
+* "High Salary": income > 50000
+
+All three categories must be included in the result table. If there are
+no accounts in a category, return 0 for that category.
+
+DATA REQUIREMENTS:
+* Table: Accounts
+  - account_id (int)
+  - income (int)
+
+========================================================================
