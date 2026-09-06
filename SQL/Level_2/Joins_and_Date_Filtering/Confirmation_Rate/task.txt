@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Confirmation Rate
+========================================================================
+
+TASK OVERVIEW:
+Find the confirmation rate of each user, defined as the number of 'confirmed'
+messages divided by the total number of requested confirmation messages.
+Round to two decimal places. Users with no requests should have a rate of 0.00.
+
+DATA REQUIREMENTS:
+* Table: Signups
+  - user_id (int)
+  - time_stamp (datetime)
+* Table: Confirmations
+  - user_id (int)
+  - time_stamp (datetime)
+  - action (enum: 'confirmed', 'timeout')
+
+========================================================================
