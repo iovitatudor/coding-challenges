@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: Employees Whose Manager Left the Company
+========================================================================
+
+TASK OVERVIEW:
+Find the IDs of employees whose salary is strictly less than $30000 and
+whose manager left the company (meaning their manager_id is not found in
+the employee_id column of the Employees table). Return the result ordered
+by employee_id.
+
+DATA REQUIREMENTS:
+* Table: Employees
+  - employee_id (int)
+  - name (varchar)
+  - manager_id (int)
+  - salary (int)
+
+========================================================================
