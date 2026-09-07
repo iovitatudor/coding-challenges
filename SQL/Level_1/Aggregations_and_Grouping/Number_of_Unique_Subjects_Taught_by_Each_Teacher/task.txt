@@ -1,0 +1,14 @@
+========================================================================
+TASK NAME: Number of Unique Subjects Taught by Each Teacher
+========================================================================
+
+TASK OVERVIEW:
+Calculate the number of unique subjects each teacher teaches in the university.
+
+DATA REQUIREMENTS:
+* Table: Teacher
+  - teacher_id (int)
+  - subject_id (int)
+  - dept_id (int)
+
+========================================================================
