@@ -1,0 +1,16 @@
+========================================================================
+TASK NAME: Odd and Even Transactions
+========================================================================
+
+TASK OVERVIEW:
+Find the sum of amounts for odd and even transactions for each day. If there
+are no odd or even transactions for a specific date, display 0.
+Return the result ordered by transaction_date in ascending order.
+
+DATA REQUIREMENTS:
+* Table: transactions
+  - transaction_id (int)
+  - amount (int)
+  - transaction_date (date)
+
+========================================================================
