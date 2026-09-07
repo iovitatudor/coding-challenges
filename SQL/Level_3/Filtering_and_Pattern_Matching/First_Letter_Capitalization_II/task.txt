@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: First Letter Capitalization II
+========================================================================
+
+TASK OVERVIEW:
+Transform the text in content_text so that the first letter of each word is
+capitalized and remaining letters are lowercase. Words connected with hyphens
+or special characters should have each part capitalized.
+
+DATA REQUIREMENTS:
+* Table: user_content
+  - content_id (int)
+  - content_text (varchar)
+
+========================================================================
