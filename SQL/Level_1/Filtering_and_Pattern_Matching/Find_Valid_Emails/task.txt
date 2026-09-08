@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Find Valid Emails
+========================================================================
+
+TASK OVERVIEW:
+Find all valid email addresses. A valid email contains an alphanumeric/underscore
+prefix before '@', a letter-only domain name after '@', and ends with '.com'.
+Return the result ordered by user_id in ascending order.
+
+DATA REQUIREMENTS:
+* Table: Users
+  - user_id (int)
+  - email (varchar)
+
+========================================================================
