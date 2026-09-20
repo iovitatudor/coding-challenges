@@ -1,0 +1,25 @@
+========================================================================
+TASK NAME: Find Books with No Available Copies
+========================================================================
+
+TASK OVERVIEW:
+Find all books that are currently borrowed (return_date IS NULL) where the count
+of unreturned copies equals total_copies (0 available copies remaining).
+Return the result ordered by current_borrowers DESC, then title ASC.
+
+DATA REQUIREMENTS:
+* Table: library_books
+  - book_id (int)
+  - title (varchar)
+  - author (varchar)
+  - genre (varchar)
+  - publication_year (int)
+  - total_copies (int)
+* Table: borrowing_records
+  - record_id (int)
+  - book_id (int)
+  - borrower_name (varchar)
+  - borrow_date (date)
+  - return_date (date)
+
+========================================================================
