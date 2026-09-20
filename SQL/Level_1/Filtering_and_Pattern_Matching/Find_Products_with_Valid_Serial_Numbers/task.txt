@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: Find Products with Valid Serial Numbers
+========================================================================
+
+TASK OVERVIEW:
+Find all products whose description contains a valid serial number pattern.
+A valid serial number starts with case-sensitive 'SN', followed by exactly 4
+digits, a hyphen (-), and exactly 4 digits.
+Return the result ordered by product_id in ascending order.
+
+DATA REQUIREMENTS:
+* Table: products
+  - product_id (int)
+  - product_name (varchar)
+  - description (varchar)
+
+========================================================================
