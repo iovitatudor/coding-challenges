@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Find Invalid IP Addresses
+========================================================================
+
+TASK OVERVIEW:
+Find invalid IPv4 addresses in the logs table along with their count of
+occurrences (invalid_count). An IPv4 address is invalid if:
+1. It has octets with numbers greater than 255.
+2. It has leading zeros in any octet (e.g., 01.02.03.04).
+3. It has fewer or more than 4 octets.
+
+Return the result ordered by invalid_count DESC, then ip DESC.
+
+DATA REQUIREMENTS:
+* Table: logs
+  - log_id (int)
+  - ip (varchar)
+  - status_code (int)
+
+========================================================================
