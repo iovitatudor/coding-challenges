@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: DNA Pattern Recognition
+========================================================================
+
+TASK OVERVIEW:
+Identify specific DNA sequence patterns for each sample and flag them as 1 or 0:
+- has_start: Starts with 'ATG'
+- has_stop: Ends with 'TAA', 'TAG', or 'TGA'
+- has_atat: Contains 'ATAT'
+- has_ggg: Contains at least 3 consecutive 'G's ('GGG')
+
+Return the result ordered by sample_id in ascending order.
+
+DATA REQUIREMENTS:
+* Table: Samples
+  - sample_id (int)
+  - dna_sequence (varchar)
+  - species (varchar)
+
+========================================================================
