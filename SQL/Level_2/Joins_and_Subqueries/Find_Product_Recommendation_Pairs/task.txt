@@ -1,0 +1,26 @@
+========================================================================
+TASK NAME: Find Product Recommendation Pairs (LeetCode 3521)
+========================================================================
+
+TASK OVERVIEW:
+Identify distinct product pairs frequently purchased together by the same customers:
+1. Ensure product1_id < product2_id to prevent duplicates/mirror pairs.
+2. Determine how many unique customers purchased both products in a pair.
+3. Filter pairs where at least 3 distinct customers purchased both products.
+4. Retrieve product categories for both products from ProductInfo.
+5. Order output by customer_count DESC, product1_id ASC, product2_id ASC.
+
+DATA REQUIREMENTS:
+* Table: ProductPurchases
+  - user_id (int)
+  - product_id (int)
+  - quantity (int)
+  Primary Key: (user_id, product_id)
+
+* Table: ProductInfo
+  - product_id (int)
+  - category (varchar)
+  - price (decimal)
+  Primary Key: product_id
+
+========================================================================
