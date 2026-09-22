@@ -1,0 +1,20 @@
+========================================================================
+TASK NAME: Analyze Subscription Conversion
+========================================================================
+
+TASK OVERVIEW:
+Find users who converted from free trial to paid subscription and calculate:
+1. trial_avg_duration: Average daily activity duration during 'free_trial' (rounded to 2 decimals)
+2. paid_avg_duration: Average daily activity duration during 'paid' period (rounded to 2 decimals)
+
+Only include users who have records for both 'free_trial' and 'paid'.
+Order the output by user_id ASC.
+
+DATA REQUIREMENTS:
+* Table: UserActivity
+  - user_id (int)
+  - activity_date (date)
+  - activity_type (varchar)
+  - activity_duration (int)
+
+========================================================================
