@@ -1,0 +1,36 @@
+========================================================================
+TASK NAME: Seasonal Sales Analysis (LeetCode 3564)
+========================================================================
+
+TASK OVERVIEW:
+Find the most popular product category for each season.
+Seasons are defined as:
+  - Winter: December, January, February
+  - Spring: March, April, May
+  - Summer: June, July, August
+  - Fall:   September, October, November
+
+Ranking criteria per season:
+1. Highest total_quantity sold
+2. Highest total_revenue (quantity * price)
+3. Lexicographically smaller category name
+
+Return columns: season, category, total_quantity, total_revenue
+Order output by season ASC.
+
+DATA REQUIREMENTS:
+* Table: sales
+  - sale_id (int)
+  - product_id (int)
+  - sale_date (date)
+  - quantity (int)
+  - price (decimal)
+  Primary Key: sale_id
+
+* Table: products
+  - product_id (int)
+  - product_name (varchar)
+  - category (varchar)
+  Primary Key: product_id
+
+========================================================================
