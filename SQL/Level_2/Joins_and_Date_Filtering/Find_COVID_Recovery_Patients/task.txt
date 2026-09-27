@@ -1,0 +1,26 @@
+========================================================================
+TASK NAME: Find COVID Recovery Patients (LeetCode 3586)
+========================================================================
+
+TASK OVERVIEW:
+Find patients who tested positive for COVID and later tested negative:
+1. Calculate recovery_time in days = (first_negative_date_after_positive - first_positive_date).
+2. Only include patients with a valid recovery timeline (both positive and a subsequent negative test).
+3. Ignore tests before the first positive or intermediate inconclusive tests.
+4. Order output by recovery_time ASC, then patient_name ASC.
+
+DATA REQUIREMENTS:
+* Table: patients
+  - patient_id (int)
+  - patient_name (varchar)
+  - age (int)
+  Primary Key: patient_id
+
+* Table: covid_tests
+  - test_id (int)
+  - patient_id (int)
+  - test_date (date)
+  - result (varchar) -- 'Positive', 'Negative', 'Inconclusive'
+  Primary Key: test_id
+
+========================================================================
