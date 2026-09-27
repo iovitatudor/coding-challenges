@@ -1,0 +1,26 @@
+========================================================================
+TASK NAME: Find Consistently Improving Employees (LeetCode 3580)
+========================================================================
+
+TASK OVERVIEW:
+Find employees who have consistently improved their performance over their last three reviews:
+1. Must have at least 3 reviews in total.
+2. Filter for the most recent 3 reviews per employee based on review_date.
+3. Check that the ratings are strictly increasing across these last 3 reviews (r1 < r2 < r3).
+4. Calculate improvement_score = (latest_rating - earliest_rating_of_last_3).
+5. Order output by improvement_score DESC, then name ASC.
+
+DATA REQUIREMENTS:
+* Table: employees
+  - employee_id (int)
+  - name (varchar)
+  Primary Key: employee_id
+
+* Table: performance_reviews
+  - review_id (int)
+  - employee_id (int)
+  - review_date (date)
+  - rating (int)
+  Primary Key: review_id
+
+========================================================================
