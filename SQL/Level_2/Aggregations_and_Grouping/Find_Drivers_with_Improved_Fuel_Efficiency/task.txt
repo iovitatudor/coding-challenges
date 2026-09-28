@@ -1,0 +1,30 @@
+========================================================================
+TASK NAME: Find Drivers with Improved Fuel Efficiency (LeetCode 3601)
+========================================================================
+
+TASK OVERVIEW:
+Find drivers whose fuel efficiency (distance_km / fuel_consumed) improved between H1 and H2:
+1. H1 (First half): January to June (Months 1–6)
+2. H2 (Second half): July to December (Months 7–12)
+3. Calculate average fuel efficiency per trip for each half.
+4. Only include drivers who have trips in BOTH halves.
+5. Filter for drivers with an efficiency improvement (second_half_avg > first_half_avg).
+6. Calculate efficiency_improvement = ROUND(second_half_avg - first_half_avg, 2).
+7. Round all average columns to 2 decimal places.
+8. Order output by efficiency_improvement DESC, then driver_name ASC.
+
+DATA REQUIREMENTS:
+* Table: drivers
+  - driver_id (int)
+  - driver_name (varchar)
+  Primary Key: driver_id
+
+* Table: trips
+  - trip_id (int)
+  - driver_id (int)
+  - trip_date (date)
+  - distance_km (decimal)
+  - fuel_consumed (decimal)
+  Primary Key: trip_id
+
+========================================================================
