@@ -1,0 +1,29 @@
+========================================================================
+TASK NAME: Find Overbooked Employees (LeetCode 3611)
+========================================================================
+
+TASK OVERVIEW:
+Find employees who spent more than 50% of their working time (40 hrs/week) in meetings:
+1. Group meetings by employee_id and ISO week/year (or week start date).
+2. Calculate total meeting duration per employee per week.
+3. Mark a week as "meeting-heavy" if total duration > 20 hours.
+4. Count meeting-heavy weeks per employee.
+5. Filter for employees with at least 2 meeting-heavy weeks (>= 2).
+6. Order output by meeting_heavy_weeks DESC, then employee_name ASC.
+
+DATA REQUIREMENTS:
+* Table: employees
+  - employee_id (int)
+  - employee_name (varchar)
+  - department (varchar)
+  Primary Key: employee_id
+
+* Table: meetings
+  - meeting_id (int)
+  - employee_id (int)
+  - meeting_date (date)
+  - meeting_type (varchar)
+  - duration_hours (decimal)
+  Primary Key: meeting_id
+
+========================================================================
