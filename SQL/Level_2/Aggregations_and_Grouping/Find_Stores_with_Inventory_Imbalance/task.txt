@@ -1,0 +1,29 @@
+========================================================================
+TASK NAME: Find Stores with Inventory Imbalance (LeetCode 3626)
+========================================================================
+
+TASK OVERVIEW:
+Find stores where the most expensive product has a lower stock quantity than the cheapest product:
+1. Identify the most expensive product (highest price) and its quantity per store.
+2. Identify the cheapest product (lowest price) and its quantity per store.
+3. Filter stores that have at least 3 distinct products (COUNT(product_name) >= 3).
+4. Filter stores where most_expensive_quantity < cheapest_quantity.
+5. Calculate imbalance_ratio = ROUND(cheapest_quantity / most_expensive_quantity::numeric, 2).
+6. Order output by imbalance_ratio DESC, then store_name ASC.
+
+DATA REQUIREMENTS:
+* Table: stores
+  - store_id (int)
+  - store_name (varchar)
+  - location (varchar)
+  Primary Key: store_id
+
+* Table: inventory
+  - inventory_id (int)
+  - store_id (int)
+  - product_name (varchar)
+  - quantity (int)
+  - price (decimal)
+  Primary Key: inventory_id
+
+========================================================================
