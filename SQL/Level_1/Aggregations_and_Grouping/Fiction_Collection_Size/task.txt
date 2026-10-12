@@ -1,0 +1,21 @@
+========================================================================
+TASK NAME: Fiction Collection Size
+========================================================================
+
+TASK OVERVIEW:
+Find the total count of books whose genre is 'Fiction'.
+Output column name should be fiction_count.
+
+DATA REQUIREMENTS:
+* Table: Books
+  - id (int)
+  - title (varchar)
+  - author (varchar)
+  - genre (varchar)
+  - price (decimal)
+  - published_year (int)
+
+EXPECTED COLUMNS:
+* fiction_count
+
+========================================================================
