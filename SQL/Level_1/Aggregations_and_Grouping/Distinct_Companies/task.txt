@@ -1,0 +1,17 @@
+========================================================================
+TASK NAME: Distinct Companies
+========================================================================
+
+TASK OVERVIEW:
+Select all distinct company names from the Works table.
+
+DATA REQUIREMENTS:
+* Table: Works
+  - employee_id (int)
+  - company_name (varchar)
+  - salary (decimal)
+
+EXPECTED COLUMNS:
+* company_name
+
+========================================================================
