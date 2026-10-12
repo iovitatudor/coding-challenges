@@ -1,0 +1,19 @@
+========================================================================
+TASK NAME: Locate People
+========================================================================
+
+TASK OVERVIEW:
+Retrieve the department_name and location of departments located in a city
+whose name starts with the letter 'S'.
+
+DATA REQUIREMENTS:
+* Table: departments
+  - department_id (int)
+  - department_name (varchar)
+  - location (varchar)
+
+EXPECTED COLUMNS:
+* department_name
+* location
+
+========================================================================
