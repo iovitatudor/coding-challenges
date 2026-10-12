@@ -1,0 +1,15 @@
+========================================================================
+TASK NAME: Average Salary
+========================================================================
+
+TASK OVERVIEW:
+Calculate the average salary across all companies combined.
+Rename the aggregated output column as avg_salary.
+
+DATA REQUIREMENTS:
+* Table: Works
+  - employee_id (int)
+  - company_name (varchar)
+  - salary (decimal)
+
+========================================================================
