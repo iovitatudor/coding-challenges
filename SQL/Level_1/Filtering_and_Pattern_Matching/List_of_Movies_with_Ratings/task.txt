@@ -1,0 +1,18 @@
+========================================================================
+TASK NAME: List of Movies with Ratings
+========================================================================
+
+TASK OVERVIEW:
+Select movie names where the rating is greater than 7 and less than 9.
+
+DATA REQUIREMENTS:
+* Table: Cinema
+  - Movie_id (int)
+  - Movie_name (varchar)
+  - Description (varchar)
+  - Rating (decimal)
+
+EXPECTED COLUMNS:
+* Movie_name
+
+========================================================================
