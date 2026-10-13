@@ -1,0 +1,27 @@
+========================================================================
+TASK NAME: Player Performance Insights
+========================================================================
+
+TASK OVERVIEW:
+Find the names and scores of the top 3 distinct players by highest score
+who have won at least one match. Order output by score in descending order.
+
+DATA REQUIREMENTS:
+* Table: Players
+  - player_id (int)
+  - player_name (varchar)
+  - score (int)
+  - rank (int)
+
+* Table: Matches
+  - match_id (int)
+  - player1 (varchar)
+  - player2 (varchar)
+  - winner (varchar)
+  - match_date (date)
+
+EXPECTED COLUMNS:
+* player_name
+* score
+
+========================================================================
