@@ -1,0 +1,30 @@
+========================================================================
+TASK NAME: Player Details
+========================================================================
+
+TASK OVERVIEW:
+Retrieve details of the last 5 matches played, including match_id, player_1,
+player_2, winner, match_date, and the final score of the winning player.
+
+DATA REQUIREMENTS:
+* Table: Players
+  - player_id (int)
+  - player_name (varchar)
+  - score (int)
+
+* Table: Matches
+  - match_id (int)
+  - player_1 (varchar)
+  - player_2 (varchar)
+  - winner (varchar)
+  - match_date (date)
+
+EXPECTED COLUMNS:
+* match_id
+* player_1
+* player_2
+* winner
+* match_date
+* score
+
+========================================================================
