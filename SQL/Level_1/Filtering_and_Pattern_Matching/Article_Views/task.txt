@@ -1,0 +1,23 @@
+========================================================================
+TASK NAME: Article Views
+========================================================================
+
+TASK OVERVIEW:
+Retrieve the author_id, author_name, and publication_name for authors
+whose articles got zero views. Sort the result by author_id in ascending order.
+
+DATA REQUIREMENTS:
+* Table: Views
+  - article_id (int)
+  - author_id (int)
+  - author_name (varchar)
+  - viewer_id (int)
+  - view_count (int)
+  - publication_name (varchar)
+
+EXPECTED COLUMNS:
+* author_id
+* author_name
+* publication_name
+
+========================================================================
