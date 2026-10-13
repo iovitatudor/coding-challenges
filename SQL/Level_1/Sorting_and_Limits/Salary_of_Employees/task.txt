@@ -1,0 +1,23 @@
+========================================================================
+TASK NAME: Salary of Employees
+========================================================================
+
+TASK OVERVIEW:
+Retrieve the employee_name, company, and salary for employees in the
+'Full-Time' category, ordered by salary in descending order.
+
+DATA REQUIREMENTS:
+* Table: Employees
+  - employee_id (int)
+  - employee_name (varchar)
+  - company (varchar)
+  - category (varchar)
+  - department (varchar)
+  - salary (decimal)
+
+EXPECTED COLUMNS:
+* employee_name
+* company
+* salary
+
+========================================================================
