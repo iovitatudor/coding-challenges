@@ -1,0 +1,23 @@
+========================================================================
+TASK NAME: Handling NULL Values
+========================================================================
+
+TASK OVERVIEW:
+Retrieve book_id, title, author, and published_year of books that have
+a NULL rating in the Library table.
+
+DATA REQUIREMENTS:
+* Table: Library
+  - book_id (int)
+  - title (varchar)
+  - author (varchar)
+  - published_year (int)
+  - rating (decimal)
+
+EXPECTED COLUMNS:
+* book_id
+* title
+* author
+* published_year
+
+========================================================================
