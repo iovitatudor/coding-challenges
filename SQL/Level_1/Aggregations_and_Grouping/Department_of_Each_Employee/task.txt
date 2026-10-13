@@ -1,0 +1,22 @@
+========================================================================
+TASK NAME: Department of Each Employee
+========================================================================
+
+TASK OVERVIEW:
+Group employees by their department and display the total number of
+employees in each department as total_employees.
+
+DATA REQUIREMENTS:
+* Table: Employees
+  - employee_id (int)
+  - employee_name (varchar)
+  - company (varchar)
+  - category (varchar)
+  - department (varchar)
+  - salary (decimal)
+
+EXPECTED COLUMNS:
+* department
+* total_employees
+
+========================================================================
